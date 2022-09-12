@@ -62,15 +62,93 @@ const data =
         {
 
             Foto: "/img/post/Que-es-paisaje.jpg",
-            TextoDescriptivo: "Hola soy Fran",
+            textoDescriptivo: "Hola soy Fran",
+            nombrePosteo : "Recorriendo el mundo",
+            id : 1
 
         },
+
         {
 
-            Foto: "/img/post/Que-es-paisaje.jpg",
-            TextoDescriptivo: "Hola soy Fran",
+            Foto: "/img/post/girasoles.jpg",
+            textoDescriptivo: "Atardecer",
+            nombrePosteo : "Campo Girasoles",
+            id : 1
 
-        }
+        },
+
+        {
+
+            Foto: "/img/post/nieve.jpg",
+            textoDescriptivo: "Hola soy Fran",
+            nombrePosteo : "Recorriendo el mundo",
+            id : 1
+
+        },
+
+        {
+
+            Foto: "/img/post/cabaña.jpg",
+            textoDescriptivo: "Hola soy Fran",
+            nombrePosteo : "Recorriendo el mundo",
+            id : 1
+
+        },
+
+        {
+
+            Foto: "/img/post/lagorosa.jpg",
+            textoDescriptivo: "Hola soy Fran",
+            nombrePosteo : "Recorriendo el mundo",
+            id : 1
+
+        },
+
+        {
+
+            Foto: "/img/post/montefuji.jpg",
+            textoDescriptivo: "Hola soy Fran",
+            nombrePosteo : "Recorriendo el mundo",
+            id : 1
+
+        },
+
+        {
+
+            Foto: "/img/post/sidney.jpg",
+            textoDescriptivo: "Hola soy Fran",
+            nombrePosteo : "Recorriendo el mundo",
+            id : 1
+
+        },
+
+        {
+
+            Foto: "/img/post/desierto.jpg",
+            textoDescriptivo: "Hola soy Fran",
+            nombrePosteo : "Recorriendo el mundo",
+            id : 1
+
+        },
+
+        {
+
+            Foto: "/img/post/aureora.jpg",
+            textoDescriptivo: "Hola soy Fran",
+            nombrePosteo : "Recorriendo el mundo",
+            id : 1
+
+        },
+
+        {
+
+            Foto: "/img/post/puente.jpg",
+            textoDescriptivo: "Hola soy Fran",
+            nombrePosteo : "Recorriendo el mundo",
+            id : 1
+
+        },
+
 
     ],
 
