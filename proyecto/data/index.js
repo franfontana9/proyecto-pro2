@@ -61,7 +61,7 @@ const data =
 
         {
 
-            Foto: "/img/post/Que-es-paisaje.jpg",
+            foto: "/img/post/Que-es-paisaje.jpg",
             textoDescriptivo: "Conociendo Alaska",
             id : 1
 
@@ -69,7 +69,7 @@ const data =
 
         {
 
-            Foto: "/img/post/girasoles.jpg",
+            foto: "/img/post/girasoles.jpg",
             textoDescriptivo: "Atardecer entre flores",
             id : 2
 
@@ -77,7 +77,7 @@ const data =
 
         {
 
-            Foto: "/img/post/nieve.jpg",
+            foto: "/img/post/nieve.jpg",
             textoDescriptivo: "Que frio que hace",
             id : 3
 
@@ -85,7 +85,7 @@ const data =
 
         {
 
-            Foto: "/img/post/cabaña.jpg",
+            foto: "/img/post/cabaña.jpg",
             textoDescriptivo: "Luna de miel",
             id : 4
 
@@ -93,7 +93,7 @@ const data =
 
         {
 
-            Foto: "/img/post/lagorosa.jpg",
+            foto: "/img/post/lagorosa.jpg",
             textoDescriptivo: "Pink Lake Australia",
             id : 1
 
@@ -101,7 +101,7 @@ const data =
 
         {
 
-            Foto: "/img/post/montefuji.jpg",
+            foto: "/img/post/montefuji.jpg",
             textoDescriptivo: "Japon no podes ser mas lindo",
             id : 2
 
@@ -109,7 +109,7 @@ const data =
 
         {
 
-            Foto: "/img/post/sidney.jpg",
+            foto: "/img/post/sidney.jpg",
             textoDescriptivo: "Sidney de noche",
             id : 3
 
@@ -117,7 +117,7 @@ const data =
 
         {
 
-            Foto: "/img/post/desierto.jpg",
+            foto: "/img/post/desierto.jpg",
             textoDescriptivo: "Recorriendo el desierto",
             id : 4
 
@@ -125,7 +125,7 @@ const data =
 
         {
 
-            Foto: "/img/post/aureora.jpg",
+            foto: "/img/post/aureora.jpg",
             textoDescriptivo: "Luces nocturnas",
             id : 1
 
@@ -133,7 +133,7 @@ const data =
 
         {
 
-            Foto: "/img/post/puente.jpg",
+            foto: "/img/post/puente.jpg",
             textoDescriptivo: "Sabado 10 am",
             id : 2
 
