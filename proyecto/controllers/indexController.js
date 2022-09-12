@@ -1,7 +1,7 @@
 const data= require("../data/index");
 
 
-const indexContoller = {
+const indexController = {
     index: function(req, res) {
         console.log (data);
         res.render('index', { title: 'Express', data:data });
