@@ -62,8 +62,7 @@ const data =
         {
 
             Foto: "/img/post/Que-es-paisaje.jpg",
-            textoDescriptivo: "Hola soy Fran",
-            nombrePosteo : "Recorriendo el mundo",
+            textoDescriptivo: "Conociendo Alaska",
             id : 1
 
         },
@@ -71,35 +70,31 @@ const data =
         {
 
             Foto: "/img/post/girasoles.jpg",
-            textoDescriptivo: "Atardecer",
-            nombrePosteo : "Campo Girasoles",
-            id : 1
+            textoDescriptivo: "Atardecer entre flores",
+            id : 2
 
         },
 
         {
 
             Foto: "/img/post/nieve.jpg",
-            textoDescriptivo: "Hola soy Fran",
-            nombrePosteo : "Recorriendo el mundo",
-            id : 1
+            textoDescriptivo: "Que frio que hace",
+            id : 3
 
         },
 
         {
 
             Foto: "/img/post/cabaña.jpg",
-            textoDescriptivo: "Hola soy Fran",
-            nombrePosteo : "Recorriendo el mundo",
-            id : 1
+            textoDescriptivo: "Luna de miel",
+            id : 4
 
         },
 
         {
 
             Foto: "/img/post/lagorosa.jpg",
-            textoDescriptivo: "Hola soy Fran",
-            nombrePosteo : "Recorriendo el mundo",
+            textoDescriptivo: "Pink Lake Australia",
             id : 1
 
         },
@@ -107,35 +102,31 @@ const data =
         {
 
             Foto: "/img/post/montefuji.jpg",
-            textoDescriptivo: "Hola soy Fran",
-            nombrePosteo : "Recorriendo el mundo",
-            id : 1
+            textoDescriptivo: "Japon no podes ser mas lindo",
+            id : 2
 
         },
 
         {
 
             Foto: "/img/post/sidney.jpg",
-            textoDescriptivo: "Hola soy Fran",
-            nombrePosteo : "Recorriendo el mundo",
-            id : 1
+            textoDescriptivo: "Sidney de noche",
+            id : 3
 
         },
 
         {
 
             Foto: "/img/post/desierto.jpg",
-            textoDescriptivo: "Hola soy Fran",
-            nombrePosteo : "Recorriendo el mundo",
-            id : 1
+            textoDescriptivo: "Recorriendo el desierto",
+            id : 4
 
         },
 
         {
 
             Foto: "/img/post/aureora.jpg",
-            textoDescriptivo: "Hola soy Fran",
-            nombrePosteo : "Recorriendo el mundo",
+            textoDescriptivo: "Luces nocturnas",
             id : 1
 
         },
@@ -143,9 +134,8 @@ const data =
         {
 
             Foto: "/img/post/puente.jpg",
-            textoDescriptivo: "Hola soy Fran",
-            nombrePosteo : "Recorriendo el mundo",
-            id : 1
+            textoDescriptivo: "Sabado 10 am",
+            id : 2
 
         },
 

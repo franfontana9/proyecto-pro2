@@ -117,6 +117,8 @@ main {
     border-radius: 90%;
     padding: 1px;
     border: 2px solid chocolate;
+    height: 45px;
+    width: 55.66px;
 }
 .post-reacciones {
     display: flex;
