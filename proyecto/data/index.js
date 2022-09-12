@@ -31,10 +31,26 @@ const data =
     comentarios: [
 
         {
+            id: 1,
+            username: "Cristian Leiva",
+            texto: "Fantasma",
 
-            Foto: "/img/foto",
-            TextoDescriptivo: "Hola soy Fran",
-
+        },
+        {
+            id: 1,
+            username: "Anita Cartijera",
+            texto: "de chill",
+            
+        },
+        {
+            id: 1,
+            username: "Ojani Noa",
+            texto: "JUUUUJUU",
+        },
+        {
+            id: 1,
+            username: "Fran Fontana",
+            texto: "primoooo, q vien se te ve jeeejee",
         }
 
     ],
