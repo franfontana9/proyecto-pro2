@@ -12,14 +12,14 @@
             <% for (let i = 0; i < data.posteos.length; i++) { %>
                <article class="post">
                 <div class="info-usuario ">
-                    <img src="<%= data.usuarios[0].Foto %> " alt="">
+                    <img src="<%= data.usuarios[0].foto %> " alt="">
                     <h4>
                         <a href="detalleUsuario.html"><%= data.usuarios[0].username%>  </a>
                     </h4>
                 </div>
                 <div class="post-body">
                     <a href="detallePost/<%= i %> ">
-                        <img src="<%= data.posteos[i].Foto %> " alt="">
+                        <img src="<%= data.posteos[i].foto %> " alt="">
                     </a>
                 </div>
                 <ul class="post-reacciones">

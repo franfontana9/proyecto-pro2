@@ -2,7 +2,7 @@ const data= require("../data/index");
 
 
 const posteoController = {
-    posteos: function(req, res) {
+    index: function(req, res) {
         console.log (data.posteos);
         res.render('index', { title: 'Express', data:data });
       },
@@ -18,4 +18,4 @@ const posteoController = {
 
 
 
-module.exports = posteoContoller;
+module.exports = posteoController;

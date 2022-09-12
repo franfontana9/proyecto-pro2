@@ -18,4 +18,4 @@ const indexController = {
 
 
 
-module.exports = indexContoller;
+module.exports = indexController;

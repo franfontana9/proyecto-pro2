@@ -3,7 +3,7 @@ const { posteos } = require("./posteoController");
 
 
 const userController = {
-    usuarios : function(req, res) {
+    index : function(req, res) {
         console.log (data.usuarios);
         res.render('index', { title: 'Express', data:data });
       },
@@ -19,4 +19,4 @@ const userController = {
 
 
 
-module.exports = userContoller;
+module.exports = userController;
