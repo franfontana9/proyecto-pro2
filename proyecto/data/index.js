@@ -4,10 +4,56 @@ const data =
 
         {
             username: "Francisco Fontana",
-            Foto: "/img/usuario/portada-foto-perfil-redes-sociales-consejos-810x540.jpg",
+            mail:"franfontana@hotmail.com",
+            contrasenia:"ff4345" ,
+            fecha: "9/12/2022" ,
+            dni: 43244245,
+            foto: "/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
             id: 1,
 
-        }
+        },
+        {
+            username: "Tomas Bereciartua",
+            mail: "tomasbereciartua99@gmail.com",
+            contrasenia:"Tomito27",
+            fecha:"8/11/2022",
+            dni: 41924431,
+            foto: "/img/usuario/360_F_90127256_86LvAGl04mOoZH1OkBnQ63G9CLsFWucV.jpg",
+            id: 2,
+
+        },
+        {
+            username: "Ojani Noa",
+            mail:"Ojani88@hotmail.com",
+            contrasenia:"riverdealma35" ,
+            fecha: "28/4/2022" ,
+            dni: 43578245,
+            foto: "/img/usuario/f768x1-39851_39978_79.jpg",
+            id: 3,
+
+        },
+        {
+            username: "Anita Cartijera",
+            mail: "AniAnita@gmail.com",
+            contrasenia:"ani95678",
+            fecha:"8/7/2022",
+            dni: 42843132,
+            foto: "/img/usuario/gubJ8-s0_400x400.jpg",
+            id: 4,
+
+        },
+        {
+            username: "Cristian Leiva",
+            mail: "Leiva3000@gmail.com",
+            contrasenia:"Boca45678",
+            fecha:"4/6/2022",
+            dni: 36843132,
+            foto: "/img/usuario/hqdefault.jpg",
+            id: 4,
+
+        },
+    
+    
 
     ],
 
