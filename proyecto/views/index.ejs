@@ -12,14 +12,14 @@
             <% for (let i = 0; i < data.posteos.length; i++) { %>
                <article class="post">
                 <div class="info-usuario ">
-                    <img src="<%= data.usuarios[0].foto %> " alt="">
+                    <img src="<%= data.usuarios[i].foto %> " alt="">
                     <h4>
-                        <a href="detalleUsuario.html"><%= data.usuarios[0].username%>  </a>
+                        <a href="/users/detalleUsuario"><%= data.usuarios[i].username%>  </a>
                     </h4>
                 </div>
                 <div class="post-body">
                     <a href="detallePost/<%= i %> ">
-                        <img src="<%= data.posteos[0].foto %> " alt="">
+                        <img src="<%= data.posteos[i].foto %> " alt="">
                     </a>
                 </div>
                 <ul class="post-reacciones">
@@ -34,14 +34,14 @@
                     <h4>Comentarios</h4>
                     <ul>
                         <li>
-                            <a href="detalleUsuario.html">Usuario</a>
+                            <a href="/users/detalleUsuario">Usuario</a>
                             <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi</span>
                         </li>
                         <li>
-                            <a href="detalleUsuario.html">Usuario</a>
+                            <a href="/users/detalleUsuario">Usuario</a>
                             <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi</span>
                         </li>
-                        <a href="detallePost.html">Ver más...</a>
+                        <a href="/posteos/detallePost">Ver más...</a>
                     </ul>
                 </div>
             </article>

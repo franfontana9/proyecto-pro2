@@ -2,13 +2,12 @@ const data= require("../data/index");
 
 
 const posteoController = {
-    index: function(req, res) {
-        console.log (data.posteos);
-        res.render('index', { title: 'Express', data:data });
+    agregarPost: function(req, res) {
+        res.render('agregarPost');
       },
 
-    resultados: function(req, res) {
-        res.render('resultadoBusqueda', { title: 'Express' });
+    detallePost: function(req, res) {
+        res.render('detallePost');
       },
 }
 

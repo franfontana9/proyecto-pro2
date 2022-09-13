@@ -3,12 +3,11 @@ const data= require("../data/index");
 
 const indexController = {
     index: function(req, res) {
-        console.log (data);
-        res.render('index', { title: 'Express', data:data });
+        res.render('index');
       },
 
     resultados: function(req, res) {
-        res.render('resultadoBusqueda', { title: 'Express' });
+        res.render('resultadoBusqueda');
       },
 }
 

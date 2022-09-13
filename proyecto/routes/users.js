@@ -6,16 +6,19 @@ const userController = require('../controllers/userController');
 
 
 
-router.get('/', userController.index);
-router.get('/resultados', userController.resultados);
+router.get('/editarPerfil', userController.editarPerfil);
+router.get('/login', userController.login);
+router.get('/miPerfil', userController.miPerfil);
+router.get('/registracion', userController.registracion);
+
+
+router.get('/detalleUsuario', userController.detalleUsuario);
+
+
+
+
 module.exports = router;
 
 
 
-/*nose si sacar esto*/
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
 
-module.exports = router;

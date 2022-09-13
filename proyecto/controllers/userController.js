@@ -1,16 +1,25 @@
-const data= require("../data/index");
-const { posteos } = require("./posteoController");
+const data = require("../data/index");
+
 
 
 const userController = {
-    index : function(req, res) {
-        console.log (data.usuarios);
-        res.render('index', { title: 'Express', data:data });
-      },
+  detalleUsuario: function (req, res) {
+    res.render('detalleUsuario');
+  },
 
-    resultados: function(req, res) {
-        res.render('resultadoBusqueda', { title: 'Express' });
-      },
+  editarPerfil: function (req, res) {
+    res.render('editarPerfil');
+  },
+  login: function (req, res) {
+    res.render('login');
+  },
+
+  miPerfil: function (req, res) {
+    res.render('miPerfil');
+  },
+  registracion: function (req, res) {
+    res.render('registracion');
+  },
 }
 
 
