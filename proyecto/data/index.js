@@ -5,50 +5,50 @@ const data =
         {
             username: "Francisco Fontana",
             mail:"franfontana@hotmail.com",
+            foto: "/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
             contrasenia:"ff4345" ,
             fecha: "9/12/2022" ,
             dni: 43244245,
-            foto: "/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
             id: 1,
 
         },
         {
             username: "Tomas Bereciartua",
             mail: "tomasbereciartua99@gmail.com",
+            foto: "/img/usuario/360_F_90127256_86LvAGl04mOoZH1OkBnQ63G9CLsFWucV.jpg",
             contrasenia:"Tomito27",
             fecha:"8/11/2022",
             dni: 41924431,
-            foto: "/img/usuario/360_F_90127256_86LvAGl04mOoZH1OkBnQ63G9CLsFWucV.jpg",
             id: 2,
 
         },
         {
             username: "Ojani Noa",
             mail:"Ojani88@hotmail.com",
+            fotoPerfil: "/img/usuario/f768x1-39851_39978_79.jpg",
             contrasenia:"riverdealma35" ,
             fecha: "28/4/2022" ,
             dni: 43578245,
-            foto: "/img/usuario/f768x1-39851_39978_79.jpg",
             id: 3,
 
         },
         {
             username: "Anita Cartijera",
             mail: "AniAnita@gmail.com",
+            foto: "/img/usuario/gubJ8-s0_400x400.jpg",
             contrasenia:"ani95678",
             fecha:"8/7/2022",
             dni: 42843132,
-            foto: "/img/usuario/gubJ8-s0_400x400.jpg",
             id: 4,
 
         },
         {
             username: "Cristian Leiva",
             mail: "Leiva3000@gmail.com",
+            foto: "/img/usuario/hqdefault.jpg",
             contrasenia:"Boca45678",
             fecha:"4/6/2022",
             dni: 36843132,
-            foto: "/img/usuario/hqdefault.jpg",
             id: 4,
 
         },
@@ -61,80 +61,80 @@ const data =
 
         {
 
-            foto: "/img/post/Que-es-paisaje.jpg",
-            textoDescriptivo: "Conociendo Alaska",
+            imagen: "/img/post/Que-es-paisaje.jpg",
+            pieImagen: "Conociendo Alaska",
             id : 1
 
         },
 
         {
 
-            foto: "/img/post/girasoles.jpg",
-            textoDescriptivo: "Atardecer entre flores",
+            imagen: "/img/post/girasoles.jpg",
+            pieImagen: "Atardecer entre flores",
             id : 2
 
         },
 
         {
 
-            foto: "/img/post/nieve.jpg",
-            textoDescriptivo: "Que frio que hace",
+            imagen: "/img/post/nieve.jpg",
+            pieImagen: "Que frio que hace",
             id : 3
 
         },
 
         {
 
-            foto: "/img/post/cabaña.jpg",
-            textoDescriptivo: "Luna de miel",
+            imagen: "/img/post/cabaña.jpg",
+            pieImagen: "Luna de miel",
             id : 4
 
         },
 
         {
 
-            foto: "/img/post/lagorosa.jpg",
-            textoDescriptivo: "Pink Lake Australia",
+            imagen: "/img/post/lagorosa.jpg",
+            pieImagen: "Pink Lake Australia",
             id : 1
 
         },
 
         {
 
-            foto: "/img/post/montefuji.jpg",
-            textoDescriptivo: "Japon no podes ser mas lindo",
+            imagen: "/img/post/montefuji.jpg",
+            pieImagen: "Japon no podes ser mas lindo",
             id : 2
 
         },
 
         {
 
-            foto: "/img/post/sidney.jpg",
-            textoDescriptivo: "Sidney de noche",
+            imagen: "/img/post/sidney.jpg",
+            pieImagen: "Sidney de noche",
             id : 3
 
         },
 
         {
 
-            foto: "/img/post/desierto.jpg",
-            textoDescriptivo: "Recorriendo el desierto",
+            imagen: "/img/post/desierto.jpg",
+            pieImagen: "Recorriendo el desierto",
             id : 4
 
         },
 
         {
 
-            foto: "/img/post/aureora.jpg",
-            textoDescriptivo: "Luces nocturnas",
+            imagen: "/img/post/aureora.jpg",
+            pieImagen: "Luces nocturnas",
             id : 1
 
         },
 
         {
 
-            foto: "/img/post/puente.jpg",
-            textoDescriptivo: "Sabado 10 am",
+            imagen: "/img/post/puente.jpg",
+            pieImagen: "Sabado 10 am",
             id : 2
 
         },
