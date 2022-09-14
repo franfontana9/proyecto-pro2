@@ -9,7 +9,29 @@
     <main>
         <section class="center main-content">
         <h1>Editar perfil</h1>
-        <p>Crear el formulario para modificar los datos de perfil de un usuario.</p>
+        <form action="../views/miPerfil.ejs" method="get">
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" value="<%- info[personal].mail %> " >
+            </div>
+            <div>
+                <label for="password">Contraseña</label>
+                <input type="password" name="password" value="<%- info[personal].contrsenia %> " >
+            </div>
+            <div>
+                <label for="pfp">Foto de perfil</label>
+                <input type="email" name="pfp" value="<%- info[personal].foto %> " >
+            </div>
+            <div>
+                <label for="fecha">Fecha de nacimiento</label>
+                <input type="date" name="fecha" value="<%- info[personal].fecha %> " >
+            </div>
+            <div>
+                <label for="dni">DNI</label>
+                <input type="text" name="dni" value="<%- info[personal].dni %> " >
+            </div>
+            <button type="submit">Registrate</button>
+        </form>
         </section>
     </main>
 
