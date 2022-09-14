@@ -15,7 +15,7 @@ const userController = {
   },
 
   miPerfil: function (req, res) {
-    res.render('miPerfil');
+    res.render('miPerfil', {info: data.usuario[0]});
   },
   registracion: function (req, res) {
     res.render('registracion');
