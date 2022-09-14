@@ -9,7 +9,17 @@
     <main>
         <section class="center main-content">
         <h1>Login</h1>
-        <p>Crear el formulario para ingresar al sitio.</p>
+        <form action="/users/miPerfil" method="get">
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email"  placeholder="Introduce tu email">
+            </div>
+            <div>
+                <label for="password">Contraseña</label>
+                <input type="password" name="password">
+            </div>
+            <button type="submit">Login</button>
+        </form>
         </section>
     </main>
 
