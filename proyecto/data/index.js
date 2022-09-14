@@ -146,23 +146,28 @@ const data =
 
         {
             id: 1,
+            id_usuario:2,
+            id_post: 1,
             username: "Cristian Leiva",
             texto: "Fantasma",
 
         },
         {
             id: 1,
+            id_post: 2,
             username: "Anita Cartijera",
             texto: "de chill",
             
         },
         {
             id: 1,
+            id_post: 3,
             username: "Ojani Noa",
             texto: "JUUUUJUU",
         },
         {
             id: 1,
+            id_post: 1,
             username: "Fran Fontana",
             texto: "primoooo, q vien se te ve jeeejee",
         }
