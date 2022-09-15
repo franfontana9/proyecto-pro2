@@ -78,7 +78,10 @@ const data =
 
             imagen: "/img/post/Que-es-paisaje.jpg",
             pieImagen: "Conociendo Alaska",
-            id : 1
+            id : 1,
+            id_usuario:1,
+            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
+            username: "Francisco Fontana"
 
         },
 
@@ -86,7 +89,10 @@ const data =
 
             imagen: "/img/post/girasoles.jpg",
             pieImagen: "Atardecer entre flores",
-            id : 2
+            id : 2,
+            id_usuario:1,
+            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
+            username: "Francisco Fontana"
 
         },
 
@@ -94,7 +100,10 @@ const data =
 
             imagen: "/img/post/nieve.jpg",
             pieImagen: "Que frio que hace",
-            id : 3
+            id : 3,
+            id_usuario:1,
+            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
+            username: "Francisco Fontana"
 
         },
 
@@ -102,7 +111,10 @@ const data =
 
             imagen: "/img/post/cabaña.jpg",
             pieImagen: "Luna de miel",
-            id : 4
+            id : 4,
+            id_usuario:1,
+            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
+            username: "Francisco Fontana"
 
         },
 
@@ -110,7 +122,10 @@ const data =
 
             imagen: "/img/post/lagorosa.jpg",
             pieImagen: "Pink Lake Australia",
-            id : 1
+            id : 1,
+            id_usuario:1,
+            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
+            username: "Francisco Fontana"
 
         },
 
@@ -118,7 +133,10 @@ const data =
 
             imagen: "/img/post/montefuji.jpg",
             pieImagen: "Japon no podes ser mas lindo",
-            id : 2
+            id : 2,
+            id_usuario:1,
+            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
+            username: "Francisco Fontana"
 
         },
 
@@ -126,7 +144,10 @@ const data =
 
             imagen: "/img/post/sidney.jpg",
             pieImagen: "Sidney de noche",
-            id : 3
+            id : 3,
+            id_usuario:1,
+            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
+            username: "Francisco Fontana"
 
         },
 
@@ -134,7 +155,10 @@ const data =
 
             imagen: "/img/post/desierto.jpg",
             pieImagen: "Recorriendo el desierto",
-            id : 4
+            id : 4,
+            id_usuario:1,
+            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
+            username: "Francisco Fontana"
 
         },
 
@@ -142,7 +166,10 @@ const data =
 
             imagen: "/img/post/aureora.jpg",
             pieImagen: "Luces nocturnas",
-            id : 1
+            id : 1,
+            id_usuario:1,
+            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
+            username: "Francisco Fontana"
 
         },
 
@@ -150,7 +177,10 @@ const data =
 
             imagen: "/img/post/puente.jpg",
             pieImagen: "Sabado 10 am",
-            id : 2
+            id : 2,
+            id_usuario:1,
+            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
+            username: "Francisco Fontana"
 
         },
 

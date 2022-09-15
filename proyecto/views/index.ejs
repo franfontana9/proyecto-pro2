@@ -9,17 +9,17 @@
 
     <main>
         <section class="center main-content">
-            <% for (let i = 0; i < data.posteos.lenght; i++) { %>
+            <% for (let i = 0; i < data.length; i++) { %>
                <article class="post">
                 <div class="info-usuario ">
-                    <img src="<%= data.usuarios[i].foto %> " alt="">
+                    <img src="<%= data[i].image_usuario %> " alt="">
                     <h4>
-                        <a href="/users/detalleUsuario"><%= data.usuarios[i].username%>  </a>
+                        <a href="/users/detalleUsuario"><%= data[1].username%>  </a>
                     </h4>
                 </div>
                 <div class="post-body">
                     <a href="detallePost/<%= i %> ">
-                        <img src="<%= data.posteos[i].imagen %> " alt="">
+                        <img src="<%= data[i].imagen %> " alt="">
                     </a>
                 </div>
                 <ul class="post-reacciones">
