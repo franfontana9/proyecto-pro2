@@ -9,58 +9,27 @@
     <main>
         <div class="user-detail container">
             <section class="top main-content">
-                <img class="profile" src="https://via.placeholder.com/100x100" alt="">
+                <img class="profile" src="<%= info.foto %> " alt="">
                 <div class="info-usuario">
                     <p><%- info.username %> </p> 
                     <a class="follow" href="/users/editarPerfil"><i class="fa-solid fa-user-gear"></i></a>
                     <ul class="meta">
-                        <li>100 post</li>
-                        <li>200 seguidores</li>
-                        <li>300 seguidos</li>
+                        <li><%= info.posteos %>  posteos</li>
+                        <li><%= info.seguidores %></li>
+                        <li><%= info.seguidores %></li>
                     </ul>
                 </div>
             </section>
+            
             <section class="bottom">
+                <% for(let = i, i < posteos.length, i++) {%> 
                 <article class="post">
                     <a href="/posteos/detallePost">
-                        <img src="https://via.placeholder.com/200x250" alt="">
+                        <img src="<%= posteos[0].imagen %> " alt="">
+                        <p><%= posteos[0].pieImagen %> </p>
                     </a>
                 </article>
-                <article class="post">
-                    <a href="/posteos/detallePost">
-                        <img src="https://via.placeholder.com/200x250" alt="">
-                    </a>
-                </article>
-                <article class="post">
-                    <a href="/posteos/detallePost">
-                        <img src="https://via.placeholder.com/200x250" alt="">
-                    </a>
-                </article>
-                <article class="post">
-                    <a href="/posteos/detallePost">
-                        <img src="https://via.placeholder.com/200x250" alt="">
-                    </a>
-                </article>
-                <article class="post">
-                    <a href="/posteos/detallePost">
-                        <img src="https://via.placeholder.com/200x250" alt="">
-                    </a>
-                </article>
-                <article class="post">
-                    <a href="/posteos/detallePost">
-                        <img src="https://via.placeholder.com/200x250" alt="">
-                    </a>
-                </article>
-                <article class="post">
-                    <a href="/posteos/detallePost">
-                        <img src="https://via.placeholder.com/200x250" alt="">
-                    </a>
-                </article>
-                <article class="post">
-                    <a href="/posteos/detallePost">
-                        <img src="https://via.placeholder.com/200x250" alt="">
-                    </a>
-                </article>
+                <% } %> 
             </section>
         </div>
     </main>

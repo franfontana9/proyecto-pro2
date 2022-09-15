@@ -2,11 +2,11 @@ const data= require("../data/index");
 
 
 const posteoController = {
-    agregarPost: function(req, res) {
+    agregarPosteo: function(req, res) {
         res.render('agregarPost');
       },
 
-    detallePost: function(req, res) {
+    detallePosteo: function(req, res) {
         res.render('detallePost');
       },
 }

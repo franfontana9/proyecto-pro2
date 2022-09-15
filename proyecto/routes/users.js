@@ -4,10 +4,10 @@ const userController = require('../controllers/userController');
 
 
 
+router.get('/miPerfil', userController.miPerfil);
 
 
 router.get('/login', userController.login);
-router.get('/miPerfil', userController.miPerfil);
 router.get('/registracion', userController.registracion);
 
 router.get('/editarPerfil/:id', userController.editarPerfil);

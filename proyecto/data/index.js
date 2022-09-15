@@ -10,6 +10,9 @@ const data =
             fecha: "9/12/2022" ,
             dni: 43244245,
             id: 1,
+            posteos: 3,
+            seguidores: 60,
+            seguidos: 100,
 
         },
         {
@@ -20,6 +23,9 @@ const data =
             fecha:"8/11/2022",
             dni: 41924431,
             id: 2,
+            posteos: 420,
+            seguidores: 768,
+            seguidos: 5675,
 
         },
         {
@@ -30,6 +36,9 @@ const data =
             fecha: "28/4/2022" ,
             dni: 43578245,
             id: 3,
+            posteos: 3,
+            seguidores: 2332,
+            seguidos: 234,
 
         },
         {
@@ -40,6 +49,9 @@ const data =
             fecha:"8/7/2022",
             dni: 42843132,
             id: 4,
+            posteos: 24,
+            seguidores: 2342,
+            seguidos: 10000,
 
         },
         {
@@ -50,6 +62,9 @@ const data =
             fecha:"4/6/2022",
             dni: 36843132,
             id: 4,
+            posteos: 30,
+            seguidores: 1000000000,
+            seguidos: 1,
 
         },
     
