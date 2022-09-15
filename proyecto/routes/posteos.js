@@ -8,7 +8,7 @@ const posteoController = require('../controllers/posteoController');
 
 
 router.get('/agregarPosteo', posteoController.agregarPosteo);
-router.get('/detallePosteo', posteoController.detallePosteo);
+router.get('/detallePosteo/:id', posteoController.detallePosteo);
 
 
 module.exports = router;

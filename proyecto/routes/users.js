@@ -4,16 +4,16 @@ const userController = require('../controllers/userController');
 
 
 
-router.get('/miPerfil', userController.miPerfil);
+
 
 
 router.get('/login', userController.login);
 router.get('/registracion', userController.registracion);
 
 
-router.get('/detalleUsuario', userController.detalleUsuario);
-
+router.get('/detalleUsuario/:id', userController.detalleUsuario);
 router.get('/editarPerfil/:id', userController.editarPerfil);
+router.get('/miPerfil/:id', userController.miPerfil);
 
 
 
