@@ -61,7 +61,7 @@ const data =
             contrasenia:"Boca45678",
             fecha:"4/6/2022",
             dni: 36843132,
-            id: 4,
+            id: 5,
             posteos: 30,
             seguidores: 1000000000,
             seguidos: 1,
@@ -76,7 +76,29 @@ const data =
 
         {
             id : 1,
-            id_usuario:3,
+            id_usuario:1,
+            imagen: "/img/post/cabaña.jpeg",
+            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
+            pieImagen: "Conociendo Alaska",
+            username: "Francisco Fontana",
+            comentarios:[
+                {
+                    id_usuario: 1,
+                    nombre: "Cristian",
+                    comentario: "tremenda placa"
+                },
+                {
+                    id_usuario: 1,
+                    nombre: "oli",
+                    comentario: "foton"
+                }
+            ]
+
+        },
+
+        {
+            id : 1,
+            id_usuario:2,
             imagen: "/img/post/Que-es-paisaje.jpg",
             image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
             pieImagen: "Conociendo Alaska",
@@ -117,33 +139,11 @@ const data =
             ]
 
         },
-
         {
             id : 1,
-            id_usuario:3,
+            id_usuario:4,
             imagen: "/img/post/Que-es-paisaje.jpg",
-            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
-            pieImagen: "Conociendo Alaska",
-            username: "Francisco Fontana",
-            comentarios:[
-                {
-                    id_usuario: 1,
-                    nombre: "Cristian",
-                    comentario: "tremenda placa"
-                },
-                {
-                    id_usuario: 1,
-                    nombre: "oli",
-                    comentario: "foton"
-                }
-            ]
-
-        },
-        {
-            id : 1,
-            id_usuario:3,
-            imagen: "/img/post/Que-es-paisaje.jpg",
-            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
+            image_usuario:"/img/usuario/hqdefault.jpg",
             pieImagen: "Conociendo Alaska",
             username: "Francisco Fontana",
             comentarios:[

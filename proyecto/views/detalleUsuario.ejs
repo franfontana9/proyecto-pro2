@@ -11,12 +11,12 @@
             <section class="top main-content">
                 <img class="profile" src="https://via.placeholder.com/100x100" alt="">
                 <div class="info-usuario">
-                    <p>Nombre de usuario</p> 
+                    <p><%= usuario.username%></p> 
                     <a class="follow" href="">seguir</a>
                     <ul class="meta">
-                        <li>100 post</li>
-                        <li>200 seguidores</li>
-                        <li>300 seguidos</li>
+                        <li><%=usuario.posteos%> Posts</li>
+                        <li><%=usuario.seguidores%>seguidores</li>
+                        <li><%=usuario.seguidos%>seguidos</li>
                     </ul>
                 </div>
             </section>
