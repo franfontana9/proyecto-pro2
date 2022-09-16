@@ -77,7 +77,7 @@ const data =
         {
             id : 1,
             id_usuario:1,
-            imagen: "/img/post/cabaña.jpeg",
+            imagen: "/img/post/aureora.jpeg",
             image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
             pieImagen: "Conociendo Alaska",
             username: "Francisco Fontana",
@@ -99,9 +99,9 @@ const data =
         {
             id : 1,
             id_usuario:2,
-            imagen: "/img/post/Que-es-paisaje.jpg",
-            image_usuario:".",
-            pieImagen: "Conociendo Alaska",
+            imagen: "/img/post/lagonieve.jpeg",
+            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
+            pieImagen: "Disfrutando el bosque",
             username: "Francisco Fontana",
             comentarios:[
                 {
@@ -121,9 +121,9 @@ const data =
         {
             id : 1,
             id_usuario:3,
-            imagen: "/img/post/Que-es-paisaje.jpg",
+            imagen: "/img/post/lagorosa.jpeg",
             image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
-            pieImagen: "Conociendo Alaska",
+            pieImagen: "Pink Lake",
             username: "Francisco Fontana",
             comentarios:[
                 {
@@ -142,9 +142,9 @@ const data =
         {
             id : 1,
             id_usuario:4,
-            imagen: "/img/post/Que-es-paisaje.jpg",
+            imagen: "/img/post/desierto.jpeg",
             image_usuario:"/img/usuario/hqdefault.jpg",
-            pieImagen: "Conociendo Alaska",
+            pieImagen: "Dunas de Asia",
             username: "Francisco Fontana",
             comentarios:[
                 {
@@ -164,9 +164,9 @@ const data =
         {
             id : 1,
             id_usuario:3,
-            imagen: "/img/post/Que-es-paisaje.jpg",
+            imagen: "/img/post/puente.jpeg",
             image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
-            pieImagen: "Conociendo Alaska",
+            pieImagen: "Armando Puentes",
             username: "Francisco Fontana",
             comentarios:[
                 {
@@ -186,9 +186,9 @@ const data =
         {
             id : 1,
             id_usuario:3,
-            imagen: "/img/post/Que-es-paisaje.jpg",
+            imagen: "/img/post/girasoles.jpeg",
             image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
-            pieImagen: "Conociendo Alaska",
+            pieImagen: "Atardecer entre flores",
             username: "Francisco Fontana",
             comentarios:[
                 {
@@ -207,9 +207,9 @@ const data =
         {
             id : 1,
             id_usuario:3,
-            imagen: "/img/post/Que-es-paisaje.jpg",
+            imagen: "/img/post/montefuji.jpeg",
             image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
-            pieImagen: "Conociendo Alaska",
+            pieImagen: "Japon",
             username: "Francisco Fontana",
             comentarios:[
                 {
@@ -228,9 +228,9 @@ const data =
         {
             id : 1,
             id_usuario:3,
-            imagen: "/img/post/Que-es-paisaje.jpg",
+            imagen: "/img/post/sidney.jpeg",
             image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
-            pieImagen: "Conociendo Alaska",
+            pieImagen: "Australia",
             username: "Francisco Fontana",
             comentarios:[
                 {
@@ -249,9 +249,9 @@ const data =
         {
             id : 1,
             id_usuario:3,
-            imagen: "/img/post/Que-es-paisaje.jpg",
-            image_usuario:"/img/usuario/--photo-pensive-man-looking-at-the.jpg",
-            pieImagen: "Conociendo Alaska",
+            imagen: "/img/post/cabaña.jpeg",
+            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
+            pieImagen: "Playita",
             username: "Francisco Fontana",
             comentarios:[
                 {
@@ -270,8 +270,8 @@ const data =
         {
             id : 1,
             id_usuario:3,
-            imagen: "/img/post/Que-es-paisaje.jpg",
-            image_usuario:"",
+            imagen: "/img/post/Que-es-paisaje.jpeg",
+            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
             pieImagen: "Conociendo Alaska",
             username: "Francisco Fontana",
             comentarios:[
