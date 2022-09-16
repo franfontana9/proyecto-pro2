@@ -4,7 +4,8 @@ const data = require("../data/index");
 
 const userController = {
   detalleUsuario: function (req, res) {
-    res.render('detalleUsuario', );
+    console.log (req.params)
+    res.render('detalleUsuario',{usuario: data.usuarios[req.params.id]});
   },
 
   editarPerfil: function (req, res) {
