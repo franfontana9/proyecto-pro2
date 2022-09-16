@@ -75,8 +75,8 @@ const data =
     posteos: [
 
         {
-            id : 1,
-            id_usuario:1,
+            id : 2,
+            id_usuario:2,
             imagen: "/img/post/aureora.jpeg",
             image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
             pieImagen: "Conociendo Alaska",
@@ -98,7 +98,7 @@ const data =
 
         {
             id : 1,
-            id_usuario:2,
+            id_usuario:3,
             imagen: "/img/post/lagonieve.jpeg",
             image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
             pieImagen: "Disfrutando el bosque",
@@ -270,7 +270,7 @@ const data =
         {
             id : 1,
             id_usuario:3,
-            imagen: "/img/post/Que-es-paisaje.jpeg",
+            imagen: "/img/post/monte.jpeg",
             image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
             pieImagen: "Conociendo Alaska",
             username: "Francisco Fontana",
