@@ -15,10 +15,11 @@
                     <img src="<%= data[i].image_usuario %> " alt="">
                     <h4>
                         <a class="titulopost" href="/users/detalleUsuario"><%= data[1].username%>  </a>
+                        <a href="./detalleUsuario.ejs"><%= data[i].username%>  </a>
                     </h4>
                 </div>
                 <div class="post-body">
-                    <a href="detallePost/<%= i %> ">
+                    <a href="./detallePost.ejs">
                         <img src="<%= data[i].imagen %> " alt="">
                     </a>
                 </div>
@@ -37,12 +38,9 @@
                             <a href="/users/detalleUsuario">Usuario</a>
                             <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi</span>
                         </li>
-                        <li>
-                            <a href="/users/detalleUsuario">Usuario</a>
-                            <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi</span>
-                        </li>
                         <a href="/posteos/detallePost">Ver más...</a>
                     </ul>
+                    
                 </div>
             </article>
                 

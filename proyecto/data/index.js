@@ -75,115 +75,219 @@ const data =
     posteos: [
 
         {
-
+            id : 1,
+            id_usuario:3,
             imagen: "/img/post/Que-es-paisaje.jpg",
+            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
             pieImagen: "Conociendo Alaska",
+            username: "Francisco Fontana",
+            comentarios:[
+                {
+                    id_usuario: 1,
+                    nombre: "Cristian",
+                    comentario: "tremenda placa"
+                },
+                {
+                    id_usuario: 1,
+                    nombre: "oli",
+                    comentario: "foton"
+                }
+            ]
+
+        },
+
+        {
             id : 1,
-            id_usuario:1,
+            id_usuario:3,
+            imagen: "/img/post/Que-es-paisaje.jpg",
             image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
-            username: "Francisco Fontana"
+            pieImagen: "Conociendo Alaska",
+            username: "Francisco Fontana",
+            comentarios:[
+                {
+                    id_usuario: 1,
+                    nombre: "Cristian",
+                    comentario: "tremenda placa"
+                },
+                {
+                    id_usuario: 1,
+                    nombre: "oli",
+                    comentario: "foton"
+                }
+            ]
 
         },
 
         {
-
-            imagen: "/img/post/girasoles.jpg",
-            pieImagen: "Atardecer entre flores",
-            id : 2,
-            id_usuario:1,
-            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
-            username: "Francisco Fontana"
-
-        },
-
-        {
-
-            imagen: "/img/post/nieve.jpg",
-            pieImagen: "Que frio que hace",
-            id : 3,
-            id_usuario:1,
-            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
-            username: "Francisco Fontana"
-
-        },
-
-        {
-
-            imagen: "/img/post/cabaña.jpg",
-            pieImagen: "Luna de miel",
-            id : 4,
-            id_usuario:1,
-            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
-            username: "Francisco Fontana"
-
-        },
-
-        {
-
-            imagen: "/img/post/lagorosa.jpg",
-            pieImagen: "Pink Lake Australia",
             id : 1,
-            id_usuario:1,
+            id_usuario:3,
+            imagen: "/img/post/Que-es-paisaje.jpg",
             image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
-            username: "Francisco Fontana"
+            pieImagen: "Conociendo Alaska",
+            username: "Francisco Fontana",
+            comentarios:[
+                {
+                    id_usuario: 1,
+                    nombre: "Cristian",
+                    comentario: "tremenda placa"
+                },
+                {
+                    id_usuario: 1,
+                    nombre: "oli",
+                    comentario: "foton"
+                }
+            ]
 
         },
-
         {
-
-            imagen: "/img/post/montefuji.jpg",
-            pieImagen: "Japon no podes ser mas lindo",
-            id : 2,
-            id_usuario:1,
-            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
-            username: "Francisco Fontana"
-
-        },
-
-        {
-
-            imagen: "/img/post/sidney.jpg",
-            pieImagen: "Sidney de noche",
-            id : 3,
-            id_usuario:1,
-            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
-            username: "Francisco Fontana"
-
-        },
-
-        {
-
-            imagen: "/img/post/desierto.jpg",
-            pieImagen: "Recorriendo el desierto",
-            id : 4,
-            id_usuario:1,
-            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
-            username: "Francisco Fontana"
-
-        },
-
-        {
-
-            imagen: "/img/post/aureora.jpg",
-            pieImagen: "Luces nocturnas",
             id : 1,
-            id_usuario:1,
+            id_usuario:3,
+            imagen: "/img/post/Que-es-paisaje.jpg",
             image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
-            username: "Francisco Fontana"
+            pieImagen: "Conociendo Alaska",
+            username: "Francisco Fontana",
+            comentarios:[
+                {
+                    id_usuario: 1,
+                    nombre: "Cristian",
+                    comentario: "tremenda placa"
+                },
+                {
+                    id_usuario: 1,
+                    nombre: "oli",
+                    comentario: "foton"
+                }
+            ]
 
         },
 
         {
-
-            imagen: "/img/post/puente.jpg",
-            pieImagen: "Sabado 10 am",
-            id : 2,
-            id_usuario:1,
+            id : 1,
+            id_usuario:3,
+            imagen: "/img/post/Que-es-paisaje.jpg",
             image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
-            username: "Francisco Fontana"
+            pieImagen: "Conociendo Alaska",
+            username: "Francisco Fontana",
+            comentarios:[
+                {
+                    id_usuario: 1,
+                    nombre: "Cristian",
+                    comentario: "tremenda placa"
+                },
+                {
+                    id_usuario: 1,
+                    nombre: "oli",
+                    comentario: "foton"
+                }
+            ]
 
         },
 
+        {
+            id : 1,
+            id_usuario:3,
+            imagen: "/img/post/Que-es-paisaje.jpg",
+            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
+            pieImagen: "Conociendo Alaska",
+            username: "Francisco Fontana",
+            comentarios:[
+                {
+                    id_usuario: 1,
+                    nombre: "Cristian",
+                    comentario: "tremenda placa"
+                },
+                {
+                    id_usuario: 1,
+                    nombre: "oli",
+                    comentario: "foton"
+                }
+            ]
+
+        },
+        {
+            id : 1,
+            id_usuario:3,
+            imagen: "/img/post/Que-es-paisaje.jpg",
+            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
+            pieImagen: "Conociendo Alaska",
+            username: "Francisco Fontana",
+            comentarios:[
+                {
+                    id_usuario: 1,
+                    nombre: "Cristian",
+                    comentario: "tremenda placa"
+                },
+                {
+                    id_usuario: 1,
+                    nombre: "oli",
+                    comentario: "foton"
+                }
+            ]
+
+        },
+        {
+            id : 1,
+            id_usuario:3,
+            imagen: "/img/post/Que-es-paisaje.jpg",
+            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
+            pieImagen: "Conociendo Alaska",
+            username: "Francisco Fontana",
+            comentarios:[
+                {
+                    id_usuario: 1,
+                    nombre: "Cristian",
+                    comentario: "tremenda placa"
+                },
+                {
+                    id_usuario: 1,
+                    nombre: "oli",
+                    comentario: "foton"
+                }
+            ]
+
+        },
+        {
+            id : 1,
+            id_usuario:3,
+            imagen: "/img/post/Que-es-paisaje.jpg",
+            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
+            pieImagen: "Conociendo Alaska",
+            username: "Francisco Fontana",
+            comentarios:[
+                {
+                    id_usuario: 1,
+                    nombre: "Cristian",
+                    comentario: "tremenda placa"
+                },
+                {
+                    id_usuario: 1,
+                    nombre: "oli",
+                    comentario: "foton"
+                }
+            ]
+
+        },
+        {
+            id : 1,
+            id_usuario:3,
+            imagen: "/img/post/Que-es-paisaje.jpg",
+            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
+            pieImagen: "Conociendo Alaska",
+            username: "Francisco Fontana",
+            comentarios:[
+                {
+                    id_usuario: 1,
+                    nombre: "Cristian",
+                    comentario: "tremenda placa"
+                },
+                {
+                    id_usuario: 1,
+                    nombre: "oli",
+                    comentario: "foton"
+                }
+            ]
+
+        },
 
     ],
 
@@ -191,28 +295,29 @@ const data =
 
         {
             id: 1,
-            id_usuario:2,
+            id_usuario:1,
             id_post: 1,
             username: "Cristian Leiva",
+            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
             texto: "Fantasma",
 
         },
         {
             id: 1,
-            id_post: 2,
+            id_post: 3,
             username: "Anita Cartijera",
             texto: "de chill",
             
         },
         {
             id: 1,
-            id_post: 3,
+            id_post: 4,
             username: "Ojani Noa",
             texto: "JUUUUJUU",
         },
         {
             id: 1,
-            id_post: 1,
+            id_post: 2,
             username: "Fran Fontana",
             texto: "primoooo, q vien se te ve jeeejee",
         }
