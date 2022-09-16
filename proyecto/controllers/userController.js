@@ -4,7 +4,7 @@ const data = require("../data/index");
 
 const userController = {
   detalleUsuario: function (req, res) {
-    res.render('detalleUsuario');
+    res.render('detalleUsuario', );
   },
 
   editarPerfil: function (req, res) {
