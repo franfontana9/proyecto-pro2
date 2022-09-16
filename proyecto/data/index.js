@@ -75,8 +75,8 @@ const data =
     posteos: [
 
         {
-            id : 1,
-            id_usuario:1,
+            id : 2,
+            id_usuario:2,
             imagen: "/img/post/aureora.jpeg",
             image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
             pieImagen: "Conociendo Alaska",
@@ -98,11 +98,11 @@ const data =
 
         {
             id : 1,
-            id_usuario:2,
+            id_usuario:3,
             imagen: "/img/post/lagonieve.jpeg",
-            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
+            image_usuario:"/img/usuario/360_F_90127256_86LvAGl04mOoZH1OkBnQ63G9CLsFWucV.jpg",
             pieImagen: "Disfrutando el bosque",
-            username: "Francisco Fontana",
+            username: "Tomas Bereciartua",
             comentarios:[
                 {
                     id_usuario: 1,
@@ -122,9 +122,9 @@ const data =
             id : 1,
             id_usuario:3,
             imagen: "/img/post/lagorosa.jpeg",
-            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
+            image_usuario:"/img/usuario/f768x1-39851_39978_79.jpg",
             pieImagen: "Pink Lake",
-            username: "Francisco Fontana",
+            username: "Ojani Noa",
             comentarios:[
                 {
                     id_usuario: 1,
@@ -143,7 +143,7 @@ const data =
             id : 1,
             id_usuario:4,
             imagen: "/img/post/desierto.jpeg",
-            image_usuario:"/img/usuario/hqdefault.jpg",
+            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
             pieImagen: "Dunas de Asia",
             username: "Francisco Fontana",
             comentarios:[
@@ -165,9 +165,9 @@ const data =
             id : 1,
             id_usuario:3,
             imagen: "/img/post/puente.jpeg",
-            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
+            image_usuario:"/img/usuario/gubJ8-s0_400x400.jpg",
             pieImagen: "Armando Puentes",
-            username: "Francisco Fontana",
+            username: "Anita Cartijera",
             comentarios:[
                 {
                     id_usuario: 1,
@@ -187,9 +187,9 @@ const data =
             id : 1,
             id_usuario:3,
             imagen: "/img/post/girasoles.jpeg",
-            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
+            image_usuario:"/img/usuario/f768x1-39851_39978_79.jpg",
             pieImagen: "Atardecer entre flores",
-            username: "Francisco Fontana",
+            username: "Ojani Noa",
             comentarios:[
                 {
                     id_usuario: 1,
@@ -208,9 +208,9 @@ const data =
             id : 1,
             id_usuario:3,
             imagen: "/img/post/montefuji.jpeg",
-            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
+            image_usuario:"/img/usuario/hqdefault.jpg",
             pieImagen: "Japon",
-            username: "Francisco Fontana",
+            username: "Cristian Leiva",
             comentarios:[
                 {
                     id_usuario: 1,
@@ -229,9 +229,9 @@ const data =
             id : 1,
             id_usuario:3,
             imagen: "/img/post/sidney.jpeg",
-            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
+            image_usuario:"/img/usuario/hqdefault.jpg",
             pieImagen: "Australia",
-            username: "Francisco Fontana",
+            username: "Cristian Leiva",
             comentarios:[
                 {
                     id_usuario: 1,
@@ -250,9 +250,9 @@ const data =
             id : 1,
             id_usuario:3,
             imagen: "/img/post/cabaña.jpeg",
-            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
+            image_usuario:"/img/usuario/360_F_90127256_86LvAGl04mOoZH1OkBnQ63G9CLsFWucV.jpg",
             pieImagen: "Playita",
-            username: "Francisco Fontana",
+            username: "Tomas Bereciartua",
             comentarios:[
                 {
                     id_usuario: 1,
@@ -270,10 +270,10 @@ const data =
         {
             id : 1,
             id_usuario:3,
-            imagen: "/img/post/Que-es-paisaje.jpeg",
-            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
+            imagen: "/img/post/monte.jpeg",
+            image_usuario:"/img/usuario/gubJ8-s0_400x400.jpg",
             pieImagen: "Conociendo Alaska",
-            username: "Francisco Fontana",
+            username: "Anita Cartijera",
             comentarios:[
                 {
                     id_usuario: 1,
