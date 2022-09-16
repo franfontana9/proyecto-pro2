@@ -27,7 +27,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #fff;
+    background-color: rgb(170, 0, 0);
 }
 .main-nav {
     display: flex;
@@ -37,7 +37,7 @@ header {
     align-items: center;
 
     padding: 10px 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 .logo{
@@ -116,7 +116,7 @@ main {
     margin-right: 10px;
     border-radius: 90%;
     padding: 1px;
-    border: 2px solid chocolate;
+    border: 2px solid rgb(186, 3, 3);
     height: 45px;
     width: 55.66px;
 }
@@ -200,7 +200,7 @@ main {
     margin-right: 10px;
     border-radius: 90%;
     padding: 1px;
-    border: 2px solid chocolate;
+    border: 2px solid rgb(164, 11, 0);
 }
 .comment .text {
     font-size: 12px;
@@ -226,8 +226,8 @@ main {
 }
 .comment-form button {
     padding: 5px 0;
-    background-color:mediumseagreen;
-    border: 1px solid mediumaquamarine;
+    background-color:rgb(203, 47, 12);
+    border: 1px solid rgb(255, 100, 100);
     border-radius: 5px;
     color: #fff;
 }
@@ -282,11 +282,11 @@ main {
 }
 .follow:hover{
     cursor: pointer;
-    background-color: forestgreen;
+    background-color: rgb(121, 8, 8);
 }
 .profile {
     border-radius: 90%;
-    border: 2px solid chocolate;
+    border: 2px solid rgb(171, 3, 3);
 }
 
 .user-detail .meta {
@@ -303,5 +303,7 @@ body {
   }
   
   a {
-    color: #00B7FF;
+    color: #ffffff;
   }
+
+
