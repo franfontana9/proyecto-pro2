@@ -21,31 +21,13 @@
                 </div>
             </section>
             <section class="bottom">
+                <% for (let i = 0; i < posteos.length; i++) { %>
                 <article class="post">
                     <a href="/posteos/detallePost">
-                        <img src="https://via.placeholder.com/200x250" alt="">
+                        <img src="<%=posteos[i].imagen%>" alt="">
                     </a>
-                </article>
-                <article class="post">
-                    <a href="/posteos/detallePost">
-                        <img src="https://via.placeholder.com/200x250" alt="">
-                    </a>
-                </article>
-                <article class="post">
-                    <a href="/posteos/detallePost">
-                        <img src="https://via.placeholder.com/200x250" alt="">
-                    </a>
-                </article>
-                <article class="post">
-                    <a href="/posteos/detallePost">
-                        <img src="https://via.placeholder.com/200x250" alt="">
-                    </a>
-                </article>
-                <article class="post">
-                    <a href="/posteos/detallePost">
-                        <img src="https://via.placeholder.com/200x250" alt="">
-                    </a>
-                </article>
+                </article> 
+                <%     } %> 
             </section>
         </div>
     </main>
