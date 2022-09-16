@@ -78,6 +78,71 @@ const data =
             id : 1,
             id_usuario:3,
             imagen: "/img/post/Que-es-paisaje.jpg",
+            image_usuario:"",
+            pieImagen: "Conociendo Alaska",
+            username: "Francisco Fontana",
+            comentarios:[
+                {
+                    id_usuario: 1,
+                    nombre: "Cristian",
+                    comentario: "tremenda placa"
+                },
+                {
+                    id_usuario: 1,
+                    nombre: "oli",
+                    comentario: "foton"
+                }
+            ]
+
+        },
+
+        {
+            id : 1,
+            id_usuario:3,
+            imagen: "/img/post/Que-es-paisaje.jpg",
+            image_usuario:".",
+            pieImagen: "Conociendo Alaska",
+            username: "Francisco Fontana",
+            comentarios:[
+                {
+                    id_usuario: 1,
+                    nombre: "Cristian",
+                    comentario: "tremenda placa"
+                },
+                {
+                    id_usuario: 1,
+                    nombre: "oli",
+                    comentario: "foton"
+                }
+            ]
+
+        },
+
+        {
+            id : 1,
+            id_usuario:3,
+            imagen: "/img/post/Que-es-paisaje.jpg",
+            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
+            pieImagen: "Conociendo Alaska",
+            username: "Francisco Fontana",
+            comentarios:[
+                {
+                    id_usuario: 1,
+                    nombre: "Cristian",
+                    comentario: "tremenda placa"
+                },
+                {
+                    id_usuario: 1,
+                    nombre: "oli",
+                    comentario: "foton"
+                }
+            ]
+
+        },
+        {
+            id : 1,
+            id_usuario:3,
+            imagen: "/img/post/Que-es-paisaje.jpg",
             image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
             pieImagen: "Conociendo Alaska",
             username: "Francisco Fontana",
@@ -160,29 +225,6 @@ const data =
             ]
 
         },
-
-        {
-            id : 1,
-            id_usuario:3,
-            imagen: "/img/post/Que-es-paisaje.jpg",
-            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
-            pieImagen: "Conociendo Alaska",
-            username: "Francisco Fontana",
-            comentarios:[
-                {
-                    id_usuario: 1,
-                    nombre: "Cristian",
-                    comentario: "tremenda placa"
-                },
-                {
-                    id_usuario: 1,
-                    nombre: "oli",
-                    comentario: "foton"
-                }
-            ]
-
-        },
-
         {
             id : 1,
             id_usuario:3,
@@ -208,7 +250,7 @@ const data =
             id : 1,
             id_usuario:3,
             imagen: "/img/post/Que-es-paisaje.jpg",
-            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
+            image_usuario:"/img/usuario/--photo-pensive-man-looking-at-the.jpg",
             pieImagen: "Conociendo Alaska",
             username: "Francisco Fontana",
             comentarios:[
@@ -229,49 +271,7 @@ const data =
             id : 1,
             id_usuario:3,
             imagen: "/img/post/Que-es-paisaje.jpg",
-            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
-            pieImagen: "Conociendo Alaska",
-            username: "Francisco Fontana",
-            comentarios:[
-                {
-                    id_usuario: 1,
-                    nombre: "Cristian",
-                    comentario: "tremenda placa"
-                },
-                {
-                    id_usuario: 1,
-                    nombre: "oli",
-                    comentario: "foton"
-                }
-            ]
-
-        },
-        {
-            id : 1,
-            id_usuario:3,
-            imagen: "/img/post/Que-es-paisaje.jpg",
-            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
-            pieImagen: "Conociendo Alaska",
-            username: "Francisco Fontana",
-            comentarios:[
-                {
-                    id_usuario: 1,
-                    nombre: "Cristian",
-                    comentario: "tremenda placa"
-                },
-                {
-                    id_usuario: 1,
-                    nombre: "oli",
-                    comentario: "foton"
-                }
-            ]
-
-        },
-        {
-            id : 1,
-            id_usuario:3,
-            imagen: "/img/post/Que-es-paisaje.jpg",
-            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
+            image_usuario:"",
             pieImagen: "Conociendo Alaska",
             username: "Francisco Fontana",
             comentarios:[
@@ -298,7 +298,6 @@ const data =
             id_usuario:1,
             id_post: 1,
             username: "Cristian Leiva",
-            image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
             texto: "Fantasma",
 
         },
