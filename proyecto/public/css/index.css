@@ -27,7 +27,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgb(170, 0, 0);
+    background-color: rgb(0, 0, 0);
 }
 .main-nav {
     display: flex;
@@ -92,7 +92,7 @@ main {
 /* post */
 .post{
     background-color: #fff;
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     border-radius: 10px;
     color: #777;
     margin-bottom: 20px;
@@ -116,7 +116,7 @@ main {
     margin-right: 10px;
     border-radius: 90%;
     padding: 1px;
-    border: 2px solid rgb(186, 3, 3);
+    border: 2px solid rgb(0, 0, 0);
     height: 45px;
     width: 55.66px;
 }
@@ -156,8 +156,8 @@ main {
     bottom: 0;
     left: 0;
     right: 0;
-    background: #fff;
-    border-top: 1px solid #ddd;
+    background: rgb(0, 0, 0);
+    border-top: 1px solid rgb(91, 91, 91);
     padding: 20px 10px;
 }
 .social li {
@@ -165,6 +165,7 @@ main {
 }
 .team li {
     margin-left: 20px;
+    color:rgb(255, 255, 255);
 }
 
 /* Post detail */
@@ -200,7 +201,7 @@ main {
     margin-right: 10px;
     border-radius: 90%;
     padding: 1px;
-    border: 2px solid rgb(164, 11, 0);
+    border: 2px solid rgb(0, 0, 0);
 }
 .comment .text {
     font-size: 12px;
@@ -282,11 +283,11 @@ main {
 }
 .follow:hover{
     cursor: pointer;
-    background-color: rgb(121, 8, 8);
+    background-color: rgb(0, 0, 0);
 }
 .profile {
     border-radius: 90%;
-    border: 2px solid rgb(171, 3, 3);
+    border: 2px solid rgb(0, 0, 0);
 }
 
 .user-detail .meta {
@@ -302,5 +303,10 @@ body {
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   }
   
- 
+  a {
+    color: #ffffff;
+  }
 
+ .titulopost {
+    color:rgb(0, 0, 0);
+ }
