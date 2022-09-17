@@ -322,6 +322,31 @@ const data =
         }
 
     ],
+
+detalleUsuario: function(id){ 
+    let resultado = [];
+    for (let i=0; i<data.posteos.length; i++) {
+        if (id==data.posteos[i].id_usuario ) {
+                resultado.push(data.posteos[i])
+            
+        }     
+    }
+
+    return resultado
+
+
+},
+detallePost: function(id){
+    let resultado = {};
+    for (let i = 0; i < data.posteos.length; i++) {
+        if(id==data.posteos[i].id){
+            resultado = data.posteos[i]
+        }
+         
+    }
+    return resultado
+},
 }
+
 
 module.exports = data;
