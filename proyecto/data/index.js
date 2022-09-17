@@ -282,7 +282,7 @@ const data =
                 },
                 {
                     id_usuario: 1,
-                    nombre: "Francisco Fontana",
+                    nombre: "",
                     comentario: "Son los alpes?"
                 }
             ]
