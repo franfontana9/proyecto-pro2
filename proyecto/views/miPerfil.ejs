@@ -9,20 +9,20 @@
     <main>
         <div class="user-detail container">
             <section class="top main-content">
-                <img class="profile" src="<%= info.foto %> " alt="">
+                <img class="profile" src="<%=usuario.image_usuario%> " alt="">
                 <div class="info-usuario">
-                    <p><%- info.username %> </p> 
+                    <p><%- usuario.username %> </p> 
                     <a class="follow" href="/users/editarPerfil/0"><i class="fa-solid fa-user-gear"></i></a>
                     <ul class="meta">
-                        <li><%= info.posteos %>  posteos</li>
-                        <li><%= info.seguidores %></li>
-                        <li><%= info.seguidos %></li>
+                        <li><%= usuario.posteos %>  posteos</li>
+                        <li><%= usuario.seguidores %></li>
+                        <li><%= usuario.seguidos %></li>
                     </ul>
                 </div>
             </section>
             
             <section class="bottom">
-                <% for(let i = 0, i < posteos.length, i++) { %> 
+                <% for(let i = 0; i < posteos.length; i++) { %> 
                 <article class="post">
                     <a href="/posteos/detallePost">
                         <img src="<%= posteos[i].imagen %> " alt="">

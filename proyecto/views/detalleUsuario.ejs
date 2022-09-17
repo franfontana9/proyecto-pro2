@@ -21,10 +21,10 @@
                 </div>
             </section>
             <section class="bottom"> 
-              <% for( let i = 0; i < data.length; i++ ) { %>
+              <% for( let i = 0; i < posteos.length; i++ ) { %>
                 <article class="post">
-                    <a href="/posteos/detallePost/<%=data[i].id %>">
-                        <img src="<%=data[i].imagen%>" alt=" ">
+                    <a href="/posteos/detallePost/<%=posteos[i].id %>">
+                        <img src="<%=posteos[i].imagen%>" alt=" ">
                     </a>
                 </article> 
               <% } %>
