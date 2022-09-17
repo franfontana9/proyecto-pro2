@@ -202,6 +202,8 @@ main {
     border-radius: 90%;
     padding: 1px;
     border: 2px solid rgb(0, 0, 0);
+    width: 50px;
+    height: 50px;
 }
 .comment .text {
     font-size: 12px;
@@ -288,6 +290,8 @@ main {
 .profile {
     border-radius: 90%;
     border: 2px solid rgb(0, 0, 0);
+    width: 70px;
+    height: 50px;
 }
 
 .user-detail .meta {
@@ -305,6 +309,9 @@ body {
   
   a {
     color: #ffffff;
+  }
+  a.user{
+    color:#000;
   }
 
  .titulopost {

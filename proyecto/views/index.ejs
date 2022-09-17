@@ -1,59 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<%- include('./partials/head') %> 
+<%- include('./partials/head') %>
 
-<body>
-    
-<%- include("./partials/header") %> 
+    <body>
 
-    <main>
-        <section class="center main-content">
-            <% for (let i = 0; i < data.length; i++) { %>
-               <article class="post">
-                <div class="info-usuario ">
-                    <img src="<%= data[i].image_usuario %> " alt="">
-                    <h4>
-                  <a class="titulopost" href="/users/detalleUsuario/<%=data[i].id_usuario%>"><%= data[i].username%>  </a>
-                    </h4>
-                </div>
-                <div class="post-body">
-                    <a href="./detallePost.ejs">
-                        <img src="<%= data[i].imagen%> " alt="">
-                    </a>
-                </div>
-                <ul class="post-reacciones">
-                    <li>
-                        <i class="fa-regular fa-heart"></i>
-                    </li>
-                    <li>
-                        <i class="fa-regular fa-comment"></i>
-                    </li>
-                </ul>
-                <div class="post-comentarios">
-                    <h4>Comentarios</h4>
-                    <ul>
-                       <li>
-                            <a href="/users/detalleUsuario"><%=data[i].comentarios[0].nombre%></a>
-                            <span><%= data[i].comentarios[0].comentario  %> </span>
-                        </li>
-                        <li>
-                            <a href="/users/detalleUsuario"><%=data[i].comentarios[1].nombre%></a>
-                            <span><%= data[i].comentarios[1].comentario  %> </span>
-                        </li>
-                        <a class="ver" href="/posteos/detallePosteo/1">Ver más...</a>
-                    </ul>
-                    
-                </div>
-            </article>
-           <% }  %> 
-        </section>    
-    </main>
+        <%- include("./partials/header") %>
 
-    <%- include('./partials/footer') %> 
+            <main>
+                <section class="center main-content">
+                    <% for (let i=0; i < data.length; i++) { %>
+                        <article class="post">
+                            <div class="info-usuario ">
+                                <img src="<%= data[i].image_usuario %> " alt="">
+                                <h4>
+                                    <a class="titulopost" href="/users/detalleUsuario/<%=data[i].id_usuario%>">
+                                        <%= data[i].username%>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div class="post-body">
+                                <a href="./detallePost.ejs">
+                                    <img src="<%= data[i].imagen%> " alt="">
+                                </a>
+                            </div>
+                            <ul class="post-reacciones">
+                                <li>
+                                    <i class="fa-regular fa-heart"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-comment"></i>
+                                </li>
+                            </ul>
+                            <div class="post-comentarios">
+                                <h4>Comentarios</h4>
+                                <ul>
+                                    <% for (let j=0; j < data[i].comentarios.length; j++) { %>
+                                        <li>
+                                            <a href="/users/detalleUsuario/<%=data[i].comentarios[j].id_usuario%>">
+                                                <%=data[i].comentarios[j].nombre%>
+                                            </a>
+                                            <span>
+                                                <%= data[i].comentarios[j].comentario %>
+                                            </span>
+                                        </li>
+                                        <% } %>
+                                            <a class="ver" href="/posteos/detallePosteo/<%=data[i].id%>">Ver más...</a>
+                                </ul>
+
+                            </div>
+                        </article>
+                        <% } %>
+                </section>
+            </main>
+
+            <%- include('./partials/footer') %>
 
 
 
-</body>
+    </body>
 
 </html>

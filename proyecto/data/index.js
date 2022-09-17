@@ -83,21 +83,23 @@ const data =
             username: "Francisco Fontana",
             comentarios:[
                 {
-                    id_usuario: 1,
+                    id_usuario: 5,
                     nombre: "Cristian Leiva",
-                    comentario: "Muy lindo lugar"
+                    comentario: "Muy lindo lugar",
+                    image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg"
                 },
                 {
                     id_usuario: 1,
                     nombre: "Oli Costa",
-                    comentario: "Increible <3"
+                    comentario: "Increible <3",
+                    image_usuario:"/img/usuario/360_F_90127256_86LvAGl04mOoZH1OkBnQ63G9CLsFWucV.jpg"
                 }
             ]
 
         },
 
         {
-            id : 1,
+            id : 2,
             id_usuario:2,
             imagen: "/img/post/lagonieve.jpeg",
             image_usuario:"/img/usuario/360_F_90127256_86LvAGl04mOoZH1OkBnQ63G9CLsFWucV.jpg",
