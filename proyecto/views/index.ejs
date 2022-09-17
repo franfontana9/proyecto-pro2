@@ -19,7 +19,7 @@
                 </div>
                 <div class="post-body">
                     <a href="./detallePost.ejs">
-                        <img src="<%= data[i].imagen %> " alt="">
+                        <img src="<%= data[i].imagen%> " alt="">
                     </a>
                 </div>
                 <ul class="post-reacciones">
@@ -34,8 +34,8 @@
                     <h4>Comentarios</h4>
                     <ul>
                        <li>
-                            <a href="/users/detalleUsuario"></a>
-                            <span></span>
+                            <a href="/users/detalleUsuario"><%=data[i].comentarios[1].username%></a>
+                            <span><%= data[i].comentarios.texto%> </span>
                         </li>
                         <a href="/posteos/detallePost">Ver más...</a>
                     </ul>
