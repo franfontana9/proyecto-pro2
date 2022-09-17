@@ -84,13 +84,13 @@ const data =
             comentarios:[
                 {
                     id_usuario: 1,
-                    nombre: "Cristian",
-                    comentario: "tremenda placa"
+                    nombre: "Cristian Leiva",
+                    comentario: "Muy lindo lugar"
                 },
                 {
                     id_usuario: 1,
-                    nombre: "oli",
-                    comentario: "foton"
+                    nombre: "Oli Costa",
+                    comentario: "Increible <3"
                 }
             ]
 
@@ -106,13 +106,13 @@ const data =
             comentarios:[
                 {
                     id_usuario: 1,
-                    nombre: "Cristian",
-                    comentario: "tremenda placa"
+                    nombre: "Francisco Fontana",
+                    comentario: "Tremenda placa"
                 },
                 {
                     id_usuario: 1,
-                    nombre: "oli",
-                    comentario: "foton"
+                    nombre: "Ojani Noa",
+                    comentario: "Quiero estar ahi!"
                 }
             ]
 
@@ -128,13 +128,13 @@ const data =
             comentarios:[
                 {
                     id_usuario: 1,
-                    nombre: "Cristian",
-                    comentario: "tremenda placa"
+                    nombre: "Cristian Leiva",
+                    comentario: "Quien pudiera..."
                 },
                 {
                     id_usuario: 1,
-                    nombre: "oli",
-                    comentario: "foton"
+                    nombre: "Tomas Bereciartua",
+                    comentario: "Disfrutando a lo loco"
                 }
             ]
 
@@ -149,13 +149,13 @@ const data =
             comentarios:[
                 {
                     id_usuario: 1,
-                    nombre: "Cristian",
-                    comentario: "tremenda placa"
+                    nombre: "Cristian Leiva",
+                    comentario: "No tiene ningun tipo de sentido"
                 },
                 {
                     id_usuario: 1,
-                    nombre: "oli",
-                    comentario: "foton"
+                    nombre: "Oli Costa",
+                    comentario: "Quiero!!!!"
                 }
             ]
 
@@ -171,13 +171,13 @@ const data =
             comentarios:[
                 {
                     id_usuario: 1,
-                    nombre: "Cristian",
-                    comentario: "tremenda placa"
+                    nombre: "Francisco Fontana",
+                    comentario: "Que vertigo"
                 },
                 {
                     id_usuario: 1,
-                    nombre: "oli",
-                    comentario: "foton"
+                    nombre: "Tomas Bereciartua",
+                    comentario: "No te caigas"
                 }
             ]
 
@@ -193,13 +193,13 @@ const data =
             comentarios:[
                 {
                     id_usuario: 1,
-                    nombre: "Cristian",
-                    comentario: "tremenda placa"
+                    nombre: "Cristian Leiva",
+                    comentario: "Donde es?? "
                 },
                 {
                     id_usuario: 1,
-                    nombre: "oli",
-                    comentario: "foton"
+                    nombre: "Oli Costa",
+                    comentario: "Me tenes que llevar la proxima!"
                 }
             ]
 
@@ -214,13 +214,13 @@ const data =
             comentarios:[
                 {
                     id_usuario: 1,
-                    nombre: "Cristian",
-                    comentario: "tremenda placa"
+                    nombre: "Ojani Noa",
+                    comentario: "Monte fuji????!!"
                 },
                 {
                     id_usuario: 1,
-                    nombre: "oli",
-                    comentario: "foton"
+                    nombre: "Tomas Bereciartua",
+                    comentario: "WOOOW"
                 }
             ]
 
@@ -235,13 +235,13 @@ const data =
             comentarios:[
                 {
                     id_usuario: 1,
-                    nombre: "Cristian",
-                    comentario: "tremenda placa"
+                    nombre: "Anita Cartijera",
+                    comentario: "Volve que te extraño"
                 },
                 {
                     id_usuario: 1,
-                    nombre: "oli",
-                    comentario: "foton"
+                    nombre: "Oli Costa",
+                    comentario: "Traeme un regalito"
                 }
             ]
 
@@ -256,13 +256,13 @@ const data =
             comentarios:[
                 {
                     id_usuario: 1,
-                    nombre: "Cristian",
-                    comentario: "tremenda placa"
+                    nombre: "Cristian Leiva",
+                    comentario: "Que nivel que manejas"
                 },
                 {
                     id_usuario: 1,
-                    nombre: "oli",
-                    comentario: "foton"
+                    nombre: "Oli Costa",
+                    comentario: "Vos si que estas tranquilo"
                 }
             ]
 
@@ -277,13 +277,13 @@ const data =
             comentarios:[
                 {
                     id_usuario: 1,
-                    nombre: "Cristian",
-                    comentario: "tremenda placa"
+                    nombre: "Cristian Leiva",
+                    comentario: "Tremendo lugar"
                 },
                 {
                     id_usuario: 1,
-                    nombre: "oli",
-                    comentario: "foton"
+                    nombre: "Francisco Fontana",
+                    comentario: "Son los alpes?"
                 }
             ]
 
