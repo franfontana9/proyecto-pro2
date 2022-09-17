@@ -19,7 +19,9 @@ html {
 body {
     margin: 0;
     padding: 0;
-    color:#777
+    color:#777;
+    background-color: #000;
+    
 }
 /* navigation */
 header {
@@ -323,5 +325,9 @@ body {
  }
 
  a.usuario {
+     color: #000;
+ }
+
+ .caption {
      color: #000;
  }
