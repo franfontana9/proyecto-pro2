@@ -86,13 +86,13 @@ const data =
                     id_usuario: 5,
                     nombre: "Cristian Leiva",
                     comentario: "Muy lindo lugar",
-                    image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg"
+                    image_usuario:"/img/usuario/hqdefault.jpg"
                 },
                 {
-                    id_usuario: 1,
-                    nombre: "Oli Costa",
+                    id_usuario: 4,
+                    nombre: "Anita Cartijera",
                     comentario: "Increible <3",
-                    image_usuario:"/img/usuario/360_F_90127256_86LvAGl04mOoZH1OkBnQ63G9CLsFWucV.jpg"
+                    image_usuario:"/img/usuario/gubJ8-s0_400x400.jpg"
                 }
             ]
 
@@ -109,19 +109,21 @@ const data =
                 {
                     id_usuario: 1,
                     nombre: "Francisco Fontana",
-                    comentario: "Tremenda placa"
+                    comentario: "Tremenda placa",
+                    image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg"
                 },
                 {
-                    id_usuario: 1,
+                    id_usuario: 3,
                     nombre: "Ojani Noa",
-                    comentario: "Quiero estar ahi!"
+                    comentario: "Quiero estar ahi!",
+                    image_usuario:"/img/usuario/f768x1-39851_39978_79.jpg"
                 }
             ]
 
         },
 
         {
-            id : 1,
+            id : 3,
             id_usuario:3,
             imagen: "/img/post/lagorosa.jpeg",
             image_usuario:"/img/usuario/f768x1-39851_39978_79.jpg",
@@ -129,20 +131,22 @@ const data =
             username: "Ojani Noa",
             comentarios:[
                 {
-                    id_usuario: 1,
+                    id_usuario: 5,
                     nombre: "Cristian Leiva",
-                    comentario: "Quien pudiera..."
+                    comentario: "Quien pudiera...",
+                    image_usuario:"/img/usuario/hqdefault.jpg"
                 },
                 {
-                    id_usuario: 1,
+                    id_usuario: 2,
                     nombre: "Tomas Bereciartua",
-                    comentario: "Disfrutando a lo loco"
+                    comentario: "Disfrutando a lo loco",
+                    image_usuario:"/img/usuario/360_F_90127256_86LvAGl04mOoZH1OkBnQ63G9CLsFWucV.jpg"
                 }
             ]
 
         },
         {
-            id : 1,
+            id : 4,
             id_usuario:1,
             imagen: "/img/post/desierto.jpeg",
             image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
@@ -152,19 +156,21 @@ const data =
                 {
                     id_usuario: 1,
                     nombre: "Cristian Leiva",
-                    comentario: "No tiene ningun tipo de sentido"
+                    comentario: "No tiene ningun tipo de sentido",
+                    image_usuario:"/img/usuario/hqdefault.jpg"
                 },
                 {
-                    id_usuario: 1,
-                    nombre: "Oli Costa",
-                    comentario: "Quiero!!!!"
+                    id_usuario: 2,
+                    nombre: "Tomas Beraciartua",
+                    comentario: "Quiero!!!!",
+                    image_usuario:"/img/usuario/360_F_90127256_86LvAGl04mOoZH1OkBnQ63G9CLsFWucV.jpg"
                 }
             ]
 
         },
 
         {
-            id : 1,
+            id : 5,
             id_usuario:4,
             imagen: "/img/post/puente.jpeg",
             image_usuario:"/img/usuario/gubJ8-s0_400x400.jpg",
@@ -174,19 +180,21 @@ const data =
                 {
                     id_usuario: 1,
                     nombre: "Francisco Fontana",
-                    comentario: "Que vertigo"
+                    comentario: "Que vertigo",
+                    image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg"
                 },
                 {
-                    id_usuario: 1,
+                    id_usuario: 2,
                     nombre: "Tomas Bereciartua",
-                    comentario: "No te caigas"
+                    comentario: "No te caigas",
+                    image_usuario:"/img/usuario/360_F_90127256_86LvAGl04mOoZH1OkBnQ63G9CLsFWucV.jpg"
                 }
             ]
 
         },
 
         {
-            id : 1,
+            id : 6,
             id_usuario:3,
             imagen: "/img/post/girasoles.jpeg",
             image_usuario:"/img/usuario/f768x1-39851_39978_79.jpg",
@@ -196,12 +204,14 @@ const data =
                 {
                     id_usuario: 1,
                     nombre: "Cristian Leiva",
-                    comentario: "Donde es?? "
+                    comentario: "Donde es?? ",
+                    image_usuario:"/img/usuario/hqdefault.jpg"
                 },
                 {
                     id_usuario: 1,
-                    nombre: "Oli Costa",
-                    comentario: "Me tenes que llevar la proxima!"
+                    nombre: "Anita Cartijera",
+                    comentario: "Me tenes que llevar la proxima!",
+                    image_usuario:"/img/usuario/gubJ8-s0_400x400.jpg"
                 }
             ]
 
@@ -215,14 +225,16 @@ const data =
             username: "Cristian Leiva",
             comentarios:[
                 {
-                    id_usuario: 1,
+                    id_usuario: 3,
                     nombre: "Ojani Noa",
-                    comentario: "Monte fuji????!!"
+                    comentario: "Monte fuji????!!",
+                    image_usuario:"/img/usuario/f768x1-39851_39978_79.jpg"
                 },
                 {
-                    id_usuario: 1,
+                    id_usuario: 2,
                     nombre: "Tomas Bereciartua",
-                    comentario: "WOOOW"
+                    comentario: "WOOOW",
+                    image_usuario:"/img/usuario/360_F_90127256_86LvAGl04mOoZH1OkBnQ63G9CLsFWucV.jpg"
                 }
             ]
 
@@ -236,14 +248,16 @@ const data =
             username: "Cristian Leiva",
             comentarios:[
                 {
-                    id_usuario: 1,
+                    id_usuario: 4,
                     nombre: "Anita Cartijera",
-                    comentario: "Volve que te extraño"
+                    comentario: "Volve que te extraño",
+                    image_usuario:"/img/usuario/gubJ8-s0_400x400.jpg"
                 },
                 {
-                    id_usuario: 1,
-                    nombre: "Oli Costa",
-                    comentario: "Traeme un regalito"
+                    id_usuario: 3,
+                    nombre: "Ojani Noa",
+                    comentario: "Traeme un regalito",
+                    image_usuario:"/img/usuario/f768x1-39851_39978_79.jpg"
                 }
             ]
 
@@ -257,14 +271,16 @@ const data =
             username: "Tomas Bereciartua",
             comentarios:[
                 {
-                    id_usuario: 1,
+                    id_usuario: 5,
                     nombre: "Cristian Leiva",
-                    comentario: "Que nivel que manejas"
+                    comentario: "Que nivel que manejas",
+                    image_usuario:"/img/usuario/hqdefault.jpg"
                 },
                 {
-                    id_usuario: 1,
-                    nombre: "Oli Costa",
-                    comentario: "Vos si que estas tranquilo"
+                    id_usuario: 4,
+                    nombre: "Anita Cartijera",
+                    comentario: "Vos si que estas tranquilo",
+                    image_usuario:"/img/usuario/gubJ8-s0_400x400.jpg"
                 }
             ]
 
@@ -278,14 +294,16 @@ const data =
             username: "Anita Cartijera",
             comentarios:[
                 {
-                    id_usuario: 1,
+                    id_usuario: 5,
                     nombre: "Cristian Leiva",
-                    comentario: "Tremendo lugar"
+                    comentario: "Tremendo lugar",
+                    image_usuario:"/img/usuario/hqdefault.jpg"
                 },
                 {
                     id_usuario: 1,
-                    nombre: "",
-                    comentario: "Son los alpes?"
+                    nombre: "Francisco Fontana",
+                    comentario: "Son los alpes?",
+                    image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg"
                 }
             ]
 
