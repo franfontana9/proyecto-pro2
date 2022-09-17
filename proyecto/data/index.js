@@ -63,7 +63,7 @@ const data =
             dni: 36843132,
             id: 5,
             posteos: 30,
-            seguidores: 1000000000,
+            seguidores: 1000000,
             seguidos: 1,
 
         },
@@ -75,8 +75,8 @@ const data =
     posteos: [
 
         {
-            id : 2,
-            id_usuario:2,
+            id : 1,
+            id_usuario:1,
             imagen: "/img/post/aureora.jpeg",
             image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
             pieImagen: "Conociendo Alaska",
@@ -98,7 +98,7 @@ const data =
 
         {
             id : 1,
-            id_usuario:3,
+            id_usuario:2,
             imagen: "/img/post/lagonieve.jpeg",
             image_usuario:"/img/usuario/360_F_90127256_86LvAGl04mOoZH1OkBnQ63G9CLsFWucV.jpg",
             pieImagen: "Disfrutando el bosque",
@@ -141,7 +141,7 @@ const data =
         },
         {
             id : 1,
-            id_usuario:4,
+            id_usuario:1,
             imagen: "/img/post/desierto.jpeg",
             image_usuario:"/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg",
             pieImagen: "Dunas de Asia",
@@ -163,7 +163,7 @@ const data =
 
         {
             id : 1,
-            id_usuario:3,
+            id_usuario:4,
             imagen: "/img/post/puente.jpeg",
             image_usuario:"/img/usuario/gubJ8-s0_400x400.jpg",
             pieImagen: "Armando Puentes",
@@ -205,8 +205,8 @@ const data =
 
         },
         {
-            id : 1,
-            id_usuario:3,
+            id : 7,
+            id_usuario:5,
             imagen: "/img/post/montefuji.jpeg",
             image_usuario:"/img/usuario/hqdefault.jpg",
             pieImagen: "Japon",
@@ -226,8 +226,8 @@ const data =
 
         },
         {
-            id : 1,
-            id_usuario:3,
+            id : 8,
+            id_usuario:5,
             imagen: "/img/post/sidney.jpeg",
             image_usuario:"/img/usuario/hqdefault.jpg",
             pieImagen: "Australia",
@@ -247,8 +247,8 @@ const data =
 
         },
         {
-            id : 1,
-            id_usuario:3,
+            id : 9,
+            id_usuario:2,
             imagen: "/img/post/cabaña.jpeg",
             image_usuario:"/img/usuario/360_F_90127256_86LvAGl04mOoZH1OkBnQ63G9CLsFWucV.jpg",
             pieImagen: "Playita",
@@ -268,8 +268,8 @@ const data =
 
         },
         {
-            id : 1,
-            id_usuario:3,
+            id : 10,
+            id_usuario:4,
             imagen: "/img/post/monte.jpeg",
             image_usuario:"/img/usuario/gubJ8-s0_400x400.jpg",
             pieImagen: "Conociendo Alaska",
