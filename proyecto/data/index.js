@@ -311,61 +311,8 @@ const data =
 
     ],
 
-    comentarios: [
-
-        {
-            id: 1,
-            id_usuario:1,
-            id_post: 1,
-            username: "Cristian Leiva",
-            texto: "Fantasma",
-
-        },
-        {
-            id: 1,
-            id_post: 3,
-            username: "Anita Cartijera",
-            texto: "de chill",
-            
-        },
-        {
-            id: 1,
-            id_post: 4,
-            username: "Ojani Noa",
-            texto: "JUUUUJUU",
-        },
-        {
-            id: 1,
-            id_post: 2,
-            username: "Fran Fontana",
-            texto: "primoooo, q vien se te ve jeeejee",
-        }
-
-    ],
-
-detalleUsuario: function(id){ 
-    let resultado = [];
-    for (let i=0; i<data.posteos.length; i++) {
-        if (id==data.posteos[i].id_usuario ) {
-                resultado.push(data.posteos[i])
-            
-        }     
-    }
-
-    return resultado
 
 
-},
-detallePost: function(id){
-    let resultado = {};
-    for (let i = 0; i < data.posteos.length; i++) {
-        if(id==data.posteos[i].id){
-            resultado = data.posteos[i]
-        }
-         
-    }
-    return resultado
-},
 }
 
 

@@ -1,5 +1,5 @@
 const data= require("../data/index");
-const { post } = require("../routes");
+
 
 
 const indexController = {
