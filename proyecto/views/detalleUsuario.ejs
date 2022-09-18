@@ -11,7 +11,7 @@
             <section class="top main-content">
                 <img class="profile" src="<%=usuario.foto%>" alt="">
                 <div class="info-usuario">
-                    <p><%= usuario.username%></p> 
+                        <p class="caption"><%= usuario.username%></p>
                     <a class="follow" href="">Seguir</a>
                     <ul class="meta">
                         <li><%=usuario.posteos%> Publicaciones</li>
@@ -23,8 +23,9 @@
             <section class="bottom"> 
               <% for( let i = 0; i < posteos.length; i++ ) { %>
                 <article class="post">
-                    <a href="/posteos/detallePost/<%=posteos[i].id %>">
+                    <a href="/posteos/detallePosteo/<%=posteos[i].id %>">
                         <img src="<%=posteos[i].imagen%>" alt=" ">
+                        <p class="caption"><%=posteos[i].pieImagen%> </p>  
                     </a>
                 </article> 
               <% } %>

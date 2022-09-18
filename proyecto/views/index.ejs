@@ -20,10 +20,11 @@
                                 </h4>
                             </div>
                             <div class="post-body">
-                                <% let url = `/posts/detallePost/${i}` %>
-                                <a href="/posts/detallePost/<%= data[i].id_posteo%>">
+                                <a href="/posteos/detallePosteo/<%= data[i].id%>">
                                     <img src="<%= data[i].imagen%> " alt="">
-                                    <p class="caption"><%= data[i].pieImagen %> </p>
+                                    <p class="caption">
+                                        <%= data[i].pieImagen %>
+                                    </p>
                                 </a>
                             </div>
                             <ul class="post-reacciones">
