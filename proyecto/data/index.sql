@@ -33,20 +33,20 @@ create table comentarios(
             updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
-insert into usuarios (`id`, `mail`, `contrasenia`, `foto_perfil`, `fecha`, `dni`)
-values (default, 'franfontana@hotmail.com', 'ff4345', '/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg', '2018-12-9', 43244245  );
+insert into usuarios (`id`,`username`, `mail`, `contrasenia`, `foto_perfil`, `fecha`, `dni`)
+values (default, `Francisco Fontana`,'franfontana@hotmail.com', 'ff4345', '/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg', '2018-12-9', 43244245  );
 
-insert into usuarios (`id`, `mail`, `contrasenia`, `foto_perfil`, `fecha`, `dni`)
-values (default, 'tomasbereciartua@gmail.com', 'tb4569', '/img/usuario/360_F_90127256_86LvAGl04mOoZH1OkBnQ63G9CLsFWucV.jpg', '1998-12-12', 41924431  );
+insert into usuarios (`id`,`username`, `mail`, `contrasenia`, `foto_perfil`, `fecha`, `dni`)
+values (default, `Tomas Bereciartua`, 'tomasbereciartua@gmail.com', 'tb4569', '/img/usuario/360_F_90127256_86LvAGl04mOoZH1OkBnQ63G9CLsFWucV.jpg', '1998-12-12', 41924431  );
 
-insert into usuarios (`id`, `mail`, `contrasenia`, `foto_perfil`, `fecha`, `dni`)
-values (default, 'Ojani88@hotmail.com', 'gfgfg1345', '/img/usuario/f768x1-39851_39978_79.jpg', '1987-4-20', 35656565  );
+insert into usuarios (`id`,`username`, `mail`, `contrasenia`, `foto_perfil`, `fecha`, `dni`)
+values (default, `Ojani Noa`, 'Ojani88@hotmail.com', 'gfgfg1345', '/img/usuario/f768x1-39851_39978_79.jpg', '1987-4-20', 35656565  );
 
-insert into usuarios (`id`, `mail`, `contrasenia`, `foto_perfil`, `fecha`, `dni`)
-values (default, 'AniAnita@gmail.com', 'ani95678', '/img/usuario/gubJ8-s0_400x400.jpg', '1978-4-3', 34224591  );
+insert into usuarios (`id`,`username`, `mail`, `contrasenia`, `foto_perfil`, `fecha`, `dni`)
+values (default, `Anita Cartijera`, 'AniAnita@gmail.com', 'ani95678', '/img/usuario/gubJ8-s0_400x400.jpg', '1978-4-3', 34224591  );
 
-insert into usuarios (`id`, `mail`, `contrasenia`, `foto_perfil`, `fecha`, `dni`)
-values (default, 'Leiva3000@gmail.com', 'barracas383', '/img/usuario/hqdefault.jpg', '1965-3-9', 23545623 );
+insert into usuarios (`id`,`username`, `mail`, `contrasenia`, `foto_perfil`, `fecha`, `dni`)
+values (default, `Cristian Leiva`, 'Leiva3000@gmail.com', 'barracas383', '/img/usuario/hqdefault.jpg', '1965-3-9', 23545623 );
 
 insert into posteos (`id`,`id_usuarios`,`imagen`,`pie_imagen`)
 values (default,1,'/img/post/aureora.jpeg', 'cali' );
