@@ -8,15 +8,15 @@ const indexController = {
       },
 
     resultados: function(req, res) {
-      let texto =  req.query.texto;
-      let info = data.posteos
-      let posteos = {}
-      for(let i = 0; i < info.length; i++){
-        if (info[i].texto == texto){
-          posteos = info[i]
+      terminoBuscado =  req.query.terminoBuscado;
+      let resultadoBusqueda = []
+      for(let i = 0; i < data.posteos.length; i++){
+        if (terminoBuscado.toLowerCase() == data.posteos[i].pieImagen.toLowerCase){
+          resultadoBusqueda.push(data.posteos[i])
+          
         }
       }
-        res.render('resultadoBusqueda', {posteo: posteo});
+        return res.render('resultadoBusqueda', {data:resultadoBusqueda, buscado:terminoBuscado});
       },
 }
 

@@ -154,7 +154,7 @@ const data =
             username: "Francisco Fontana",
             comentarios:[
                 {
-                    id_usuario: 1,
+                    id_usuario: 5,
                     nombre: "Cristian Leiva",
                     comentario: "No tiene ningun tipo de sentido",
                     image_usuario:"/img/usuario/hqdefault.jpg"

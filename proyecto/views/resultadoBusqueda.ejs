@@ -7,9 +7,38 @@
     <%- include("./partials/header") %> 
     <main>
         <section class="center main-content">
-        <h1>Resultados de búsqueda.</h1>
-        <p>Construir la vista.</p>
-        </section>
+        <h1>Resultados de búsqueda: <%= terminoBuscado %> </h1>
+    </section>
+
+       <% if(data.lenght >= 1) {%> 
+       <% for(let i = 0; i< data.lenght; i++){ %> 
+        <article class="post" >
+            <div class="info-usuario ">
+                <img src=<%= info[i].foto %> alt="">
+                <h4>
+                    <a href=""> <%= data[i].nombre %> </a>
+                </h4>
+            </div>
+            <div>
+                <a href="/posteo/detalle/id/<%= data[i].id%>">
+                    <img  src="<%= data[i].imagen %> " alt="">
+                </a>
+            </div>
+            <ul class="post-reacciones">
+                <li>
+                    <i class="fa-regular fa-heart"></i>
+                </li>
+                <li>
+                    <i class="fa-regular fa-comment"></i>
+                </li>
+            </ul>
+           
+           
+        <% } %>
+        <% } else { %>
+            <h2>No se econtraron resultados para tu busqueda</h2>
+               <% } %>
+
     </main>
    
     <%- include('./partials/footer') %> 
