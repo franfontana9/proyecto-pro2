@@ -31,7 +31,7 @@ const data =
         {
             username: "Ojani Noa",
             mail:"Ojani88@hotmail.com",
-            fotoPerfil: "/img/usuario/f768x1-39851_39978_79.jpg",
+            foto: "/img/usuario/f768x1-39851_39978_79.jpg",
             contrasenia:"riverdealma35" ,
             fecha: "28/4/2022" ,
             dni: 43578245,
