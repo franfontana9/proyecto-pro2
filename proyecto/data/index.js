@@ -290,7 +290,7 @@ const data =
             id_usuario:4,
             imagen: "/img/post/monte.jpeg",
             image_usuario:"/img/usuario/gubJ8-s0_400x400.jpg",
-            pieImagen: "Conociendo Alaska",
+            pieImagen: "Alpes Suizos",
             username: "Anita Cartijera",
             comentarios:[
                 {

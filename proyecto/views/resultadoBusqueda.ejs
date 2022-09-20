@@ -1,48 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <%- include('./partials/head') %> 
+<%- include('./partials/head') %>
 
-<body>
-    <%- include("./partials/header") %> 
-    <main>
-        <section class="center main-content">
-        <h1>Resultados de búsqueda: <%= terminoBuscado %> </h1>
-    </section>
+    <body>
 
-       <% if(data.lenght >= 1) {%> 
-       <% for(let i = 0; i< data.lenght; i++){ %> 
-        <article class="post" >
-            <div class="info-usuario ">
-                <img src=<%= info[i].foto %> alt="">
-                <h4>
-                    <a href=""> <%= data[i].nombre %> </a>
-                </h4>
-            </div>
-            <div>
-                <a href="/posteo/detalle/id/<%= data[i].id%>">
-                    <img  src="<%= data[i].imagen %> " alt="">
-                </a>
-            </div>
-            <ul class="post-reacciones">
-                <li>
-                    <i class="fa-regular fa-heart"></i>
-                </li>
-                <li>
-                    <i class="fa-regular fa-comment"></i>
-                </li>
-            </ul>
-           
-           
-        <% } %>
-        <% } else { %>
-            <h2>No se econtraron resultados para tu busqueda</h2>
-               <% } %>
+        <%- include("./partials/header") %>
 
-    </main>
-   
-    <%- include('./partials/footer') %> 
+            <main>
+                <% if (resultados.length >0) { %>
+                    <h1>Resultado de : <%= buscado %></h1>
+                  <% } else { %>
+                    <h1>No se encontraron resultados</h1>
+                    <%  } %>
+                <section class="center main-content">
+                    <% for (let i=0; i < resultados.length; i++) { %>
+                        <article class="post">
+                            <div class="info-usuario ">
+                                <img src="<%= resultados[i].image_usuario %> " alt="">
+                                <h4>
+                                    <a class="titulopost" href="/users/detalleUsuario/<%=resultados[i].id_usuario%>">
+                                        <%= resultados[i].username%>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div class="post-body">
+                                <a href="/posteos/detallePosteo/<%= resultados[i].id%>">
+                                    <img class="imgindex" src="<%= resultados[i].imagen%> " alt="">
+                                    <p class="caption">
+                                        <%= resultados[i].pieImagen %>
+                                    </p>
+                                </a>
+                            </div>
+                            <ul class="post-reacciones">
+                                <li>
+                                    <i class="fa-regular fa-heart"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-comment"></i>
+                                </li>
+                            </ul>
+                            <div class="post-comentarios">
+                                <h4>Comentarios</h4>
+                                <ul>
+                                    <% for (let j=0; j < resultados[i].comentarios.length; j++) { %>
+                                        <li>
+                                            <a href="/users/detalleUsuario/<%=resultados[i].comentarios[j].id_usuario%>">
+                                                <%=resultados[i].comentarios[j].nombre%>
+                                            </a>
+                                            <span>
+                                                <%= resultados[i].comentarios[j].comentario %>
+                                            </span>
+                                        </li>
+                                        <% } %>
+                                            <a class="ver" href="/posteos/detallePosteo/<%=resultados[i].id%>">Ver más...</a>
+                                </ul>
 
-</body>
+                            </div>
+                        </article>
+                        <% } %>
+                </section>
+            </main>
+
+            <%- include('./partials/footer') %>
+
+
+
+    </body>
 
 </html>
