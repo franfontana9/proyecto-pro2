@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('./partials/head') %> 
+
+<body>
+    
+    <%- include("./partials/header") %> 
+
+    <main>
+        <div class="post-detail container">
+            <section class="center main-content post">
+                <div class="info-usuario">
+                    <img src="<%=post.image_usuario%>" alt="">
+                    <p><a class="usuario" href="/users/detalleUsuario/<%=post.id_usuario%>"><%=post.username%></a></p>
+                </div>
+                <img class="photo" src="<%= post.imagen %>" alt="">
+                <p class="caption"><%=post.pieImagen%> </p>
+            </section>
+            <section class="right">
+                <h4>Comentarios</h4>
+                <section class="comments">
+                    <form action="" class="comment-form">
+                        <input type="text" class="input" placeholder="Agregar comentario">
+                        <button type="submit">Comentar</button>
+                    </form>
+                    <div>
+                        <% for (let i = 0; i < post.comentarios.length; i++) { %>
+                        <article class="comment">
+                            <img src="<%=post.comentarios[i].image_usuario%>" alt="">
+                            <section class="content">
+                                <a class="user" href="/users/detalleUsuario/<%=post.comentarios[i].id_usuario%>"><%=post.comentarios[i].nombre%></a>
+                                <span class="text"><%= post.comentarios[i].comentario%></span>
+                            </section>
+                        </article>
+                    <% } %>
+                       
+                    </div>
+                </section>
+            </section>
+        </div>
+    </main>
+
+    <%- include('./partials/footer') %> 
+</body>
+
+</html>
