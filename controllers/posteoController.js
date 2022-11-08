@@ -3,7 +3,12 @@ const data= require("../data/index");
 
 const posteoController = {
     agregarPosteo: function(req, res) {
-        res.render('agregarPost');
+        if (req.session.usuario) {
+          return res.render('agregarPost');
+
+        }else{
+          res.redirect('/users/login')
+        }
       },
 
     detallePosteo: function(req, res) {

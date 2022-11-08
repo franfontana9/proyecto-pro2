@@ -1,6 +1,7 @@
 const data = require("../data/index");
 const db = require("../database/models");
 const bcrypt = require("bcryptjs");
+const { localsName } = require("ejs");
 
 
 
@@ -13,7 +14,12 @@ const userController = {
   },
 
   editarPerfil: function (req, res) {
-    res.render('editarPerfil', { info: data.usuarios, personal: req.params.id });
+    if (req.session.usuario) {
+      return res.render('editarPerfil', { info: data.usuarios, personal: req.params.id });
+
+    }else{
+      res.redirect('/users/login')
+    }
   },
   login: function (req, res) {
     res.render('login');
@@ -31,14 +37,37 @@ const userController = {
     db.Usuario.create({
       username: req.body.usuario,
       mail: req.body.mail,
-      contrasenia: bcrypt.hashSync(req.body.password,12),
+      contrasenia: bcrypt.hashSync(req.body.password, 12),
       foto_perfil: "foto",
       fecha: req.body.fecha,
       dni: req.body.dni,
     })
-    .then(
-      ()=>{res.redirect('/')}
-    )
+      .then(
+        () => { res.redirect('/') }
+      )
+  },
+  singin: function (req, res) {
+    db.Usuario.findOne({
+      where: { mail: req.body.email }
+
+    })
+      .then(function (usuario) {
+        console.log(usuario);
+        if (usuario == null || !bcrypt.compareSync(req.body.password, usuario.contrasenia)) {
+          res.locals.error = 'usuario invalido'
+          return res.render('login');
+        }
+        req.session.usuario = usuario.dataValues;
+        res.cookie('userId', usuario.id, {
+          maxAge: 1000 * 60 * 60
+        })
+        res.redirect('/')
+      })
+  },
+  logout: function (req, res) {
+      req.session.destroy(),
+      res.clearCookie('userId')
+      res.redirect('/users/login')
   }
 }
 
