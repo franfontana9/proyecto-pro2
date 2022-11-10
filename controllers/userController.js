@@ -1,6 +1,6 @@
 const data = require("../data/index");
 const db = require("../database/models");
-const bcrypt = require("bcryptjs");
+const bcrypt = require('bcryptjs');
 const { localsName } = require("ejs");
 
 
@@ -68,7 +68,27 @@ const userController = {
       req.session.destroy(),
       res.clearCookie('userId')
       res.redirect('/users/login')
-  }
+  },
+  store: (req, res) => {
+        
+    let usuarioAGuardar = req.body;
+    let imgPefil = req.file.filename;
+    /* luego la tengo que guardar en la DB */
+    let user ={
+        name:usuarioAGuardar.username,
+        email:usuarioAGuardar.mail,
+        password:bcrypt.hashSync(usuarioAGuardar.contrasenia,10),
+        img : imgPefil
+    }
+    User.create(user)
+    .then((result)=>{
+        return res.redirect('/users/login')
+    })
+    .catch((err)=>{
+        return console.log(err)
+    })
+    
+}
 }
 
 

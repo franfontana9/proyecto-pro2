@@ -9,10 +9,17 @@
             <main>
                 <section class="center main-content">
                     <h1>Registrate</h1>
-                    <form  class="formRe" action="/users/registracion" method="post">
+                    <form class="formRe" action="/users/registracion" method="post" enctype="multipart/form-data">
                         <div>
-                            <label for="nombre">usuario</label>
-                            <input required type="texto" name="usuario"  placeholder="Introduce tu Username">
+
+                            <!-- <% if (locals.errors) { %>
+                                <p class="error" style="color:red">
+                                    <%= locals.errors.message %>
+                                </p>
+                                <% } %> -->
+                                
+                                    <label for="nombre">usuario</label>
+                                    <input required type="texto" name="usuario" placeholder="Introduce tu Username">
                         </div>
                         <div>
                             <label for="password">Contraseña</label>
@@ -20,21 +27,24 @@
                         </div>
                         <div>
                             <label for="mail">Email</label>
-                            <input required type="mail" name="mail"  placeholder="Introduce tu mail">
+                            <input required type="mail" name="mail" placeholder="Introduce tu mail">
                         </div>
-                            <label for="pfp">Foto de perfil</label>
-                            <input type="file" name="pfp"  placeholder="Introduce tu foto">
+                        <label for="pfp">Foto de perfil</label>
+                        <input type="file" name="multer" placeholder="Introduce tu foto">
                         </div>
                         <div>
                             <label for="fecha">Fecha de nacimiento</label>
-                            <input required type="date" name="fecha"  placeholder="Introduce tu fecha de nacimiento">
+                            <input required type="date" name="fecha" placeholder="Introduce tu fecha de nacimiento">
                         </div>
                         <div>
                             <label for="dni">DNI</label>
-                            <input required type="number" name="dni"  placeholder="Introduce tu DNI">
+                            <input required type="number" name="dni" placeholder="Introduce tu DNI">
                         </div>
+                        <!-- <div>
+                           <input type="file" name="multer"> 
+                        </div> -->
                         <button type="submit">Registrate</button>
-                    
+
                     </form>
 
                 </section>
