@@ -77,7 +77,7 @@ const userController = {
     let user ={
         name:usuarioAGuardar.username,
         email:usuarioAGuardar.mail,
-        password:bcrypt.hashSync(usuarioAGuardar.contrasenia,10),
+        password:bcrypt.hashSync(usuarioAGuardar.contrasenia,12),
         img : imgPefil
     }
     User.create(user)
