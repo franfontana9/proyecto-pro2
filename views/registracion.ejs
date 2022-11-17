@@ -11,34 +11,32 @@
                     <h1>Registrate</h1>
                     <form class="formRe" action="/users/registracion" method="post" enctype="multipart/form-data">
                         <div>
-
-                            <!-- <% if (locals.errors) { %>
+                            <% if (locals.errors) { %>
                                 <p class="error" style="color:red">
                                     <%= locals.errors.message %>
                                 </p>
-                                <% } %> -->
-                                
-                                    <label for="nombre">usuario</label>
-                                    <input required type="texto" name="usuario" placeholder="Introduce tu Username">
+                            <% } %>
+                            <label for="nombre">usuario</label>
+                            <input type="texto" name="usuario" placeholder="Introduce tu Username">
                         </div>
                         <div>
                             <label for="password">Contraseña</label>
-                            <input required type="password" name="password" placeholder="Introduce tu contraseña">
+                            <input type="password" name="password" placeholder="Introduce tu contraseña">
                         </div>
                         <div>
                             <label for="mail">Email</label>
-                            <input required type="mail" name="mail" placeholder="Introduce tu mail">
+                            <input type="mail" name="mail" placeholder="Introduce tu mail">
                         </div>
                         <label for="pfp">Foto de perfil</label>
                         <input type="file" name="multer" placeholder="Introduce tu foto">
                         </div>
                         <div>
                             <label for="fecha">Fecha de nacimiento</label>
-                            <input required type="date" name="fecha" placeholder="Introduce tu fecha de nacimiento">
+                            <input type="date" name="fecha" placeholder="Introduce tu fecha de nacimiento">
                         </div>
                         <div>
                             <label for="dni">DNI</label>
-                            <input required type="number" name="dni" placeholder="Introduce tu DNI">
+                            <input type="number" name="dni" placeholder="Introduce tu DNI">
                         </div>
                         <!-- <div>
                            <input type="file" name="multer"> 
