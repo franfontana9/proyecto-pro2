@@ -28,6 +28,14 @@ app.use(session({
 }));
 
 app.use(function(req, res, next) {
+  /* Logica */
+  if (req.session.usuario != undefined) {
+      res.locals.usuario = req.session.usuario;
+  }
+  return next();
+});
+
+app.use(function(req, res, next) {
   if (req.cookies.userId != undefined && req.session.user == undefined) {
       let idUsuarioEnCookie = req.cookies.userId;
 
