@@ -20,12 +20,10 @@ let upload = multer({storage: storage});
 router.get('/login', userController.login);
 router.get('/registracion', userController.registracion);
 router.post('/registracion', upload.single('multer'), userController.store);
-
-
 router.get('/detalleUsuario/:id', userController.detalleUsuario);
-router.get('/editarPerfil/:id', userController.editarPerfil);
+router.get('/editarPerfil', userController.editarPerfil);
+router.post('/editarPerfil', upload.single('foto'), userController.actualizarPerfil);
 router.get('/miPerfil/:id', userController.miPerfil);
-router.post('/registracion', userController.registrar);
 router.post('/login', userController.singin);
 router.get('/logout', userController.logout);
 
@@ -34,7 +32,6 @@ router.get('/logout', userController.logout);
 
 
 module.exports = router;
-
 
 
 
