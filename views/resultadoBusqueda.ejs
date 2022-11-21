@@ -8,27 +8,28 @@
         <%- include("./partials/header") %>
 
             <main>
-                <% if (resultados.length >0) { %>
-                    <h1>Resultado de : <%= buscado %></h1>
-                  <% } else { %>
+                <% if (resultados.length > 0) { %>
+                    <h1>Resultado de : <%= terminoBuscado %></h1>
+                <% } else { %>
                     <h1>No se encontraron resultados</h1>
-                    <%  } %>
+                <%  } %>
+                
                 <section class="center main-content">
                     <% for (let i=0; i < resultados.length; i++) { %>
                         <article class="post">
                             <div class="info-usuario ">
-                                <img src="<%= resultados[i].image_usuario %> " alt="">
+                                <img src="/img/usuario/<%= resultados[i].Usuario.foto_perfil  %> " alt="">
                                 <h4>
-                                    <a class="titulopost" href="/users/detalleUsuario/<%=resultados[i].id_usuario%>">
-                                        <%= resultados[i].username%>
+                                    <a class="titulopost" href="/users/detalleUsuario/<%= resultados[i].Usuario %>">
+                                        <%= resultados[i].Usuario.username %>
                                     </a>
                                 </h4>
                             </div>
                             <div class="post-body">
-                                <a href="/posteos/detallePosteo/<%= resultados[i].id%>">
-                                    <img class="imgindex" src="<%= resultados[i].imagen%> " alt="">
+                                <a href="/posteos/detallePosteo/<%= resultados[i].id %>">
+                                    <img class="imgindex" src="/img/post/<%= resultados[i].imagen %> " alt="">
                                     <p class="caption">
-                                        <%= resultados[i].pieImagen %>
+                                        <%= resultados[i].pie_imagen %>
                                     </p>
                                 </a>
                             </div>
@@ -45,20 +46,19 @@
                                 <ul>
                                     <% for (let j=0; j < resultados[i].comentarios.length; j++) { %>
                                         <li>
-                                            <a href="/users/detalleUsuario/<%=resultados[i].comentarios[j].id_usuario%>">
-                                                <%=resultados[i].comentarios[j].nombre%>
+                                            <a href="/users/detalleUsuario/<%= resultados[i].comentarios[j].usuario.id %>">
+                                                <%= resultados[i].comentarios[j].usuario.username %>
                                             </a>
                                             <span>
                                                 <%= resultados[i].comentarios[j].comentario %>
                                             </span>
                                         </li>
-                                        <% } %>
-                                            <a class="ver" href="/posteos/detallePosteo/<%=resultados[i].id%>">Ver más...</a>
+                                    <% } %>
+                                    <a class="ver" href="/posteos/detallePosteo/<%= resultados[i].id %>">Ver más...</a>
                                 </ul>
-
                             </div>
                         </article>
-                        <% } %>
+                    <% } %>
                 </section>
             </main>
 
