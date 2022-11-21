@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('./partials/head') %> 
+
+<body>
+    <%- include("./partials/header") %> 
+
+    <main>
+        <section class="center main-content">
+        <h1>Edit Post</h1>
+        <form action="/posteos/actualizarPosteo/<%= posteo.id %>" method="POST" enctype="multipart/form-data">
+            <div>
+                <img width="100px" src="/img/post/<%= posteo.imagen %>" alt=""> <br> <br>
+                
+                <label for="image">Imagen</label>
+
+                <input type="file" name="image"  placeholder="Imagen">
+            </div>
+            <div>
+                <label for="post">Texto</label>
+                <input type="text" name="post" value="<%= posteo.pie_imagen %>" placeholder="Escribi un texto">
+            </div>
+            <% if(locals.errors) { %>
+                <h2><%= locals.errors.message %></h2>
+            <% } %>
+            <button type="submit">Actualizar Posteo</button>
+        </form>
+        </section>
+    </main>
+
+    <%- include('./partials/footer') %> 
+
+</body>
+
+</html>
+Footer
