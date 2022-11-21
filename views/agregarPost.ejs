@@ -9,19 +9,18 @@
     <main>
         <section class="center main-content">
         <h1>Nuevo Post</h1>
-        <form action="" method="get">
-            <div>
-                <label for="user">Id del usuario</label>
-                <input type="id" name="user"  placeholder="Id del usuario">
-            </div>
+        <form action="/posteos/crearPosteo" method="POST" enctype="multipart/form-data">
             <div>
                 <label for="image">Imagen</label>
-                <input type="texto" name="image"  placeholder="Imagen">
+                <input type="file" name="image"  placeholder="Imagen">
             </div>
             <div>
                 <label for="post">Texto</label>
                 <input type="texto" name="post"  placeholder="Escribi un texto">
             </div>
+            <% if(locals.errors) { %>
+                <h2><%= locals.errors.message %></h2>
+            <% } %>
             <button type="submit">Agregar Posteo</button>
         </form>
         </section>
