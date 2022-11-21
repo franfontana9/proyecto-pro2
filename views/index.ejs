@@ -9,21 +9,21 @@
 
             <main>
                 <section class="center main-content">
-                    <% for (let i=0; i < data.length; i++) { %>
+                    <% for (let i=0; i < posteos.length; i++) { %>
                         <article class="post">
                             <div class="info-usuario ">
-                                <img src="<%= data[i].image_usuario %> " alt="">
+                                <img src="/img/usuario/<%= posteos[i].Usuario.foto_perfil %> " alt="">
                                 <h4>
-                                    <a class="titulopost" href="/users/detalleUsuario/<%=data[i].id_usuario%>">
-                                        <%= data[i].username%>
+                                    <a class="titulopost" href="/users/detalleUsuario/<%= posteos[i].Usuario.id %>">
+                                        <%= posteos[i].Usuario.username %>
                                     </a>
                                 </h4>
                             </div>
                             <div class="post-body">
-                                <a href="/posteos/detallePosteo/<%= data[i].id%>">
-                                    <img class="imgindex" src="<%= data[i].imagen%> " alt="">
+                                <a href="/posteos/detallePosteo/<%= posteos[i].id %>">
+                                    <img class="imgindex" src="/img/post/<%= posteos[i].imagen %>" alt="">
                                     <p class="caption">
-                                        <%= data[i].pieImagen %>
+                                        <%= posteos[i].pie_imagen %>
                                     </p>
                                 </a>
                             </div>
@@ -38,22 +38,21 @@
                             <div class="post-comentarios">
                                 <h4>Comentarios</h4>
                                 <ul>
-                                    <% for (let j=0; j < data[i].comentarios.length; j++) { %>
+                                    <% for (let j=0; j < posteos[i].comentarios.length; j++) { %>
                                         <li>
-                                            <a href="/users/detalleUsuario/<%=data[i].comentarios[j].id_usuario%>">
-                                                <%=data[i].comentarios[j].nombre%>
+                                            <a href="/users/detalleUsuario/<%= posteos[i].comentarios[j].usuario.id %>">
+                                                <%= posteos[i].comentarios[j].usuario.username %>
                                             </a>
                                             <span>
-                                                <%= data[i].comentarios[j].comentario %>
+                                                <%= posteos[i].comentarios[j].comentario %>
                                             </span>
                                         </li>
-                                        <% } %>
-                                            <a class="ver" href="/posteos/detallePosteo/<%=data[i].id%>">Ver más...</a>
+                                    <% } %>
+                                    <a class="ver" href="/posteos/detallePosteo/<%= posteos[i].id %>">Ver más...</a>
                                 </ul>
-
                             </div>
                         </article>
-                        <% } %>
+                    <% } %>
                 </section>
             </main>
 

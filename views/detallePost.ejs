@@ -11,30 +11,45 @@
         <div class="post-detail container">
             <section class="center main-content post">
                 <div class="info-usuario">
-                    <img src="<%=post.image_usuario%>" alt="">
-                    <p><a class="usuario" href="/users/detalleUsuario/<%=post.id_usuario%>"><%=post.username%></a></p>
+                    <img src="/img/usuario/<%= posteo.Usuario.foto_perfil %>" alt="">
+                    <p><a class="usuario" href="/users/detalleUsuario/<%= posteo.Usuario.id %>"><%= posteo.Usuario.username %></a></p>
                 </div>
-                <img class="photo" src="<%= post.imagen %>" alt="">
-                <p class="caption"><%=post.pieImagen%> </p>
+                <img class="photo" src="/img/post/<%= posteo.imagen %>" alt="">
+                <p class="caption"><%= posteo.pie_imagen %> </p>
             </section>
             <section class="right">
                 <h4>Comentarios</h4>
                 <section class="comments">
-                    <form action="" class="comment-form">
-                        <input type="text" class="input" placeholder="Agregar comentario">
-                        <button type="submit">Comentar</button>
-                    </form>
+                    <% if(locals.usuario) { %>
+                        <form action="/posteos/agregarComentario/<%= posteo.id %>" class="comment-form" method="post">
+                            <input name="comentario" type="text" class="input" placeholder="Agregar comentario">
+                            <button type="submit">Comentar</button>
+                        </form>
+                    <% } else { %>
+                        <form action="/users/login" class="comment-form" method="get">
+                            <input name="comentario" type="text" class="input" placeholder="Agregar comentario">
+                            <button type="submit">Comentar</button>
+                        </form>
+                    <% } %>
                     <div>
-                        <% for (let i = 0; i < post.comentarios.length; i++) { %>
+                        <% for (let i = 0; i < posteo.comentarios.length; i++) { %>
                         <article class="comment">
-                            <img src="<%=post.comentarios[i].image_usuario%>" alt="">
+                            <img src="/img/usuario/<%= posteo.comentarios[i].usuario.foto_perfil %>" alt="">
                             <section class="content">
-                                <a class="user" href="/users/detalleUsuario/<%=post.comentarios[i].id_usuario%>"><%=post.comentarios[i].nombre%></a>
-                                <span class="text"><%= post.comentarios[i].comentario%></span>
+                                <a class="user" href="/users/detalleUsuario/<%=  posteo.comentarios[i].usuario.id %>"><%=  posteo.comentarios[i].usuario.username %></a>
+                                <span class="text"><%= posteo.comentarios[i].comentario %></span>
                             </section>
                         </article>
-                    <% } %>
-                       
+                        <% } %>
+                    </div>
+                    <div>
+                        <% if(locals.usuario) { %>
+                            <% if(locals.usuario.id == posteo.id_usuarios) { %>
+                                <a style="color:darkslategrey" href="/posteos/eliminarPosteo/<%= posteo.id %>">Eliminar post</a>
+                                <hr>
+                                <a style="color:darkslategrey" href="/posteos/editarPosteo/<%= posteo.id %>">Editar post</a>
+                            <% } %>
+                        <% } %>
                     </div>
                 </section>
             </section>
