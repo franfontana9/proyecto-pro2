@@ -7,6 +7,10 @@
             <form action="/resultados" class="search">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input type="search" name="terminoBuscado" class="search-input" placeholder="Buscar...">
+                <select name="ordenar" id="">
+                    <option value="asc">Busqueda Ascendente</option>
+                    <option value="desc">Busqueda Descendente</option>
+                </select>          
             </form>
         </div>
         <div class="navbar-right">
@@ -14,7 +18,8 @@
                <% if(!locals.usuario){ %> 
                 <li><a href="/users/registracion">Registro</a></li>
                 <li><a href="/users/login">Login</a></li>
-                <% }else{ %> 
+                <% }else{ %>
+                <li> Bienvenido <%= locals.usuario.username %> </li> 
                 <li><a href="/"><i class="fa-solid fa-house"></i></a></li>
                 <li><a href="/posteos/agregarPosteo"><i class="fa-regular fa-square-plus"></i></a></li>
                 <li><a href="/users/miPerfil/1"><i class="fa-regular fa-user"></i></a></li>

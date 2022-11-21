@@ -9,24 +9,26 @@
     <main>
         <div class="user-detail container">
             <section class="top main-content">
-                <img class="profile" src="<%=usuario.foto%> " alt="">
+                <img class="profile" src="/img/usuario/<%= usuario_encontrado.foto_perfil%> " alt="">
                 <div class="info-usuario">
-                    <p><%- usuario.username %> </p> 
-                    <a class="follow" href="/users/editarPerfil/0"><i class="fa-solid fa-user-gear"></i></a>
+                    <p><%- usuario_encontrado.username %> </p> 
+                    <% if(locals.usuario != undefined && locals.usuario.id == usuario_encontrado.id) { %>
+                        <a class="follow" href="/users/editarPerfil"><i class="fa-solid fa-user-gear"></i></a>
+                    <% } %>
                     <ul class="meta">
-                        <li><%= usuario.posteos %>  posteos</li>
-                        <li><%= usuario.seguidores %></li>
-                        <li><%= usuario.seguidos %></li>
+                        <li><%= usuario_encontrado.Posteos.length %>  posteos</li>
+                        <li><%= usuario_encontrado.mis_seguidores.length %></li>
+                        <li><%= usuario_encontrado.mis_seguidos.length %></li>
                     </ul>
                 </div>
             </section>
             
             <section class="bottom">
-                <% for(let i = 0; i < posteos.length; i++) { %> 
+                <% for(let i = 0; i < usuario_encontrado.Posteos.length; i++) { %> 
                 <article class="post">
-                    <a href="/posteos/detallePosteo/<%=posteos[i].id%>">
-                        <img src="<%= posteos[i].imagen %> " alt="">
-                        <p class="caption"><%= posteos[i].pieImagen %> </p>
+                    <a href="/posteos/detallePosteo/<%=usuario_encontrado.Posteos[i].id%>">
+                        <img src="/img/post/<%= usuario_encontrado.Posteos[i].imagen %> " alt="">
+                        <p class="caption"><%= usuario_encontrado.Posteos[i].pie_imagen %> </p>
                     </a>
                 </article>
                 <% } %> 
