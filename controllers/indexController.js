@@ -1,24 +1,38 @@
-const data= require("../data/index");
-
-
+const db = require('../database/models');
+const op = db.Sequelize.Op;
 
 const indexController = {
-    index: function(req, res) {
-        res.render('index', {info: data.usuarios, data:data.posteos});
-      },
+  index: function (req, res) {
 
-    resultados: function(req, res) {
-      let terminoBuscado =  req.query.terminoBuscado;
-      let resultadoBusqueda = []
-      for(let i = 0; i < data.posteos.length; i++){
-        if (data.posteos[i].pieImagen.toLowerCase().includes(terminoBuscado.toLowerCase())){
-          resultadoBusqueda.push(data.posteos[i])
-          
-        }
-      }
-     
-        return res.render('resultadoBusqueda', {resultados:resultadoBusqueda, buscado:terminoBuscado});
+    db.Posteo.findAll({
+      include: {
+        all: true,
+        nested: true
       },
+      order: [['createdAt', 'DESC']]
+    })
+    .then((posteos) => {
+      res.render('index', { posteos: posteos });
+    })
+  },
+    
+
+  resultados: function (req, res) {
+    let terminoBuscado = req.query.terminoBuscado;
+    let ordenar = req.query.ordenar;
+
+    db.Posteo.findAll({
+      include: {
+        all: true,
+        nested: true
+      },
+      order: [['createdAt', ordenar]],
+      where: {pie_imagen: {[op.like] : "%" + terminoBuscado + "%"}}
+    })
+    .then((resultados) => {
+      return res.render('resultadoBusqueda', { resultados: resultados, terminoBuscado: terminoBuscado });
+    })
+  },
 }
 
 
