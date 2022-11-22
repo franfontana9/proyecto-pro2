@@ -70,33 +70,119 @@ const userController = {
       res.redirect('/users/login')
   },
   store: (req, res) => {
-        
-    let usuarioAGuardar = req.body;
-    let imgPefil = req.file.filename;
-    /* luego la tengo que guardar en la DB */
-    let user ={
-        username:usuarioAGuardar.usuario,
-        mail:usuarioAGuardar.mail,
-        contrasenia:bcrypt.hashSync(usuarioAGuardar.password,12),
-        foto_perfil : imgPefil,
-        fecha: usuarioAGuardar.fecha,
-        dni: usuarioAGuardar.dni
+    let errors = {};
+
+    if (req.body.usuario == "") {
+      errors.message = "El campo usuario esta vacio";
+      res.locals.errors = errors;
+      return res.render('registracion');
     }
-    User.create(user)
-    .then((result)=>{
-        return res.redirect('/users/login')
+    if (req.body.password == "") {
+      errors.message = "El campo password esta vacio";
+      res.locals.errors = errors;
+      return res.render('registracion');
+    }
+    if (req.body.password.length <= 2) {
+      errors.message = "El campo password debe tener mas de 2 caracteres";
+      res.locals.errors = errors;
+      return res.render('registracion');
+    }
+    if (req.body.mail == "") {
+      errors.message = "El campo mail esta vacio";
+      res.locals.errors = errors;
+      return res.render('registracion');
+    }
+    else if (req.file == undefined) {
+      errors.message = "El campo foto esta vacio";
+      res.locals.errors = errors;
+      return res.render('registracion');
+    }
+    else if (req.body.fecha == "") {
+        errors.message = "El campo fecha esta vacio";
+        res.locals.errors = errors;
+        return res.render('registracion');
+    }
+    else if (req.body.dni == "") {
+        errors.message = "El campo dni esta vacio";
+        res.locals.errors = errors;
+        return res.render('registracion');
+    }
+    else if (req.body.dni.length != 8) {
+        errors.message = "El campo dni debe tener 8 digitos";
+        res.locals.errors = errors;
+        return res.render('registracion');
+    }
+    else{
+
+      User.findOne({
+        where: {
+          [Op.or]: [{mail: req.body.mail }, {username: req.body.usuario}]
+        }
+      })
+      .then(usuario => {
+        if(usuario != null) {
+          errors.message = "El usuario o email ya existe. Elija otro";
+          res.locals.errors = errors;
+          return res.render('registracion');
+        }
+        else{
+
+          let usuarioAGuardar = req.body;
+          let imgPefil = req.file.filename;
+          /* luego la tengo que guardar en la DB */
+          let user ={
+              username:usuarioAGuardar.usuario,
+              mail:usuarioAGuardar.mail,
+              contrasenia:bcrypt.hashSync(usuarioAGuardar.password,12),
+              foto_perfil : imgPefil,
+              fecha: usuarioAGuardar.fecha,
+              dni: usuarioAGuardar.dni
+          }
+          User.create(user)
+          .then((result)=>{
+              return res.redirect('/users/login')
+          })
+          .catch((err)=>{
+              return console.log(err)
+          })
+
+        }
+      })
+     
+    }
+  },
+  seguir: function(req, res) {
+
+    if(req.session.usuario == undefined) {
+      return res.redirect('/')
+    }
+
+    let id_usuario_a_seguir = req.params.id;
+    db.Seguidor.create({
+      id_seguido: id_usuario_a_seguir,
+      id_seguidor: req.session.usuario.id
     })
-    .catch((err)=>{
-        return console.log(err)
+    .then(() => res.redirect('/users/detalleUsuario/' + id_usuario_a_seguir))
+    .catch(error => console.log(error))
+  },
+
+  dejarSeguir: function(req, res) {
+
+    if(req.session.usuario == undefined) {
+      return res.redirect('/')
+    }
+
+    let id_usuario_a_eliminar = req.params.id;
+    db.Seguidor.destroy({
+      where: [
+        { id_seguido: id_usuario_a_eliminar },
+        { id_seguidor: req.session.usuario.id}
+      ]
     })
-    
+    .then(() => res.redirect('/users/detalleUsuario/' + id_usuario_a_eliminar))
+    .catch(error => console.log(error))
+  }
 }
-}
-
-
-
-
-
 
 
 module.exports = userController;
