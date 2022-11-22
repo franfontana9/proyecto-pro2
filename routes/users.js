@@ -26,7 +26,8 @@ router.post('/editarPerfil', upload.single('foto'), userController.actualizarPer
 router.get('/miPerfil/:id', userController.miPerfil);
 router.post('/login', userController.singin);
 router.get('/logout', userController.logout);
-
+router.get('/seguir/:id', userController.seguir);
+router.get('/dejarSeguir/:id', userController.dejarSeguir);
 
 
 
