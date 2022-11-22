@@ -1,9 +1,11 @@
 create schema proyecto_data;
+
 use proyecto_data;
+
 create table usuarios(
             id int unsigned primary key auto_increment,
             username varchar(50) unique not null,
-            mail varchar(100) not null,
+            mail varchar(100) unique not null ,
             contrasenia varchar(100) not null,
             foto_perfil varchar(100) not null,
             fecha date not null,
@@ -17,21 +19,32 @@ create table posteos(
             id_usuarios int unsigned,
             imagen varchar(200) not null,
             pie_imagen text not null,
-		    foreign key (id_usuarios) references usuarios(id),
-            createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-            updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-)
-
-create table comentarios(
-            id_comentarios int unsigned primary key auto_increment,
-            id_posteos int unsigned,
-            id_usuarios int unsigned,
-            comentario text not null,
-            foreign key (id_usuarios) references usuarios(id),
-			foreign key (id_posteos) references posteos(id),
+		    foreign key (id_usuarios) references usuarios(id) ON DELETE CASCADE,
             createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
             updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
+
+create table comentarios(
+            id_comentarios int unsigned primary key auto_increment,
+            id_posteos int unsigned not null,
+            id_usuarios int unsigned not null,
+            comentario text not null,
+            foreign key (id_usuarios) references usuarios(id) ON DELETE CASCADE,
+			foreign key (id_posteos) references posteos(id) ON DELETE CASCADE,
+            createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+create table seguidores(
+            id int unsigned primary key auto_increment,
+            id_seguido int unsigned not null,
+            id_seguidor int unsigned not null,
+            foreign key (id_seguido) references usuarios(id) ON DELETE CASCADE,
+			foreign key (id_seguidor) references usuarios(id) ON DELETE CASCADE,
+            createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
 
 insert into usuarios (`id`,`username`, `mail`, `contrasenia`, `foto_perfil`, `fecha`, `dni`)
 values (default, `Francisco Fontana`,'franfontana@hotmail.com', 'ff4345', '/img/usuario/depositphotos_97968600-stock-photo-pensive-man-looking-at-the.jpg', '2018-12-9', 43244245  );
