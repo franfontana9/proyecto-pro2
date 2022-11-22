@@ -9,31 +9,25 @@
     <main>
         <section class="center main-content">
         <h1>Editar perfil</h1>
-        <form action="../views/miPerfil.ejs" method="get">
+        <form action="/users/editarPerfil" enctype="multipart/form-data" method="POST">
+            <% if (locals.errors) { %>
+                <p class="error" style="color:red">
+                    <%= locals.errors.message %>
+                </p>
+            <% } %>
             <div>
-                <label for="username">Email</label>
-                <input type="text" name="username" value="<%= info[personal].mail %> " >
-            </div>
-            <div>
-                <label for="email">Username</label>
-                <input type="email" name="email" value="<%= info[personal].username %> " >
-            </div>
-            <div>
-                <label for="password">Contraseña</label>
-                <input type="password" name="password" value="<%= info[personal].contrsenia %> " >
-            </div>
-            <div>
+                <img width="150px" src="/img/usuario/<%= locals.usuario.foto_perfil %>" alt=""> <br><br>
                 <label for="pfp">Foto de perfil</label>
-                <input type="text" name="pfp" value="<%= info[personal].foto %> " >
+                <input type="file" name="foto">
             </div>
             <div>
                 <label for="fecha">Fecha de nacimiento</label>
-                <input type="date" name="fecha" value="<%= info[personal].fecha %> " >
+                <input type="date" name="fecha" value="<%= locals.usuario.fecha %> " >
             </div>
             <div>
                 <label for="dni">DNI</label>
-                <input type="text" name="dni" value="<%= info[personal].dni %> " >
-            </div>
+                <input type="text" name="dni" value="<%= locals.usuario.dni %> " >
+            </div>   
             <button type="submit">Registrate</button>
         </form>
         </section>
