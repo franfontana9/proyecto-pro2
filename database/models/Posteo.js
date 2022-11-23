@@ -41,15 +41,14 @@ module.exports = function (sequelize, dataTypes ) {
             as : 'Usuario',
             foreignKey : 'id_usuarios',
             onDelete: 'cascade' 
-        }),
-        Posteo.belongsToMany( models.Usuario, {
-            as : 'Usuarios',
-            through:'comentarios',
-            foreignKey : 'id_posteos',
-            otherKey:'id_usuarios',
-            timestamps:true,
-            onDelete: 'cascade'
         })
+
+        Posteo.hasMany( models.Comentario, {
+            as : 'comentarios',
+            foreignKey : 'id_posteos',
+            onDelete: 'cascade' 
+        })
+
     }
 
     /*  retornar el valor del modelo */

@@ -36,6 +36,21 @@ module.exports = function (sequelize, dataTypes ) {
     
     let Comentario = sequelize.define(alias, cols, config);
 
+    Comentario.associate = function(models) {
+        Comentario.belongsTo( models.Usuario, {
+            as : 'usuario',
+            foreignKey : 'id_usuarios',
+            onDelete: 'cascade' 
+        })
+
+        Comentario.belongsTo( models.Posteo, {
+            as : 'posteo',
+            foreignKey : 'id_posteos',
+            onDelete: 'cascade' 
+        })
+
+    }
+
     /* 5.5 paso: crear las relaciones */
 
     /*  retornar el valor del modelo */
