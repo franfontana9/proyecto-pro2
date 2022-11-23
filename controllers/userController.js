@@ -1,34 +1,97 @@
 const db = require("../database/models");
+const Op = db.Sequelize.Op;
 const bcrypt = require('bcryptjs');
-// const { localsName } = require("ejs");
 let User = db.Usuario;
-
-
 
 const userController = {
   detalleUsuario: function (req, res) {
-    let usuario = data.usuarios.find(usuario => usuario.id == req.params.id)
-    let posteos = data.posteos.filter(posteo => posteo.id_usuario == usuario.id)
-    console.log(usuario)
-    res.render('detalleUsuario', { usuario: usuario, posteos: posteos });
+    db.Usuario.findOne({
+      include: {
+        all: true,
+        nested: true
+      },
+      where: {
+        id: req.params.id
+      }
+    })
+    .then(detalle => {
+      res.render('detalleUsuario', { detalle: detalle });
+    })
+
   },
 
   editarPerfil: function (req, res) {
-    if (req.session.usuario) {
-      return res.render('editarPerfil', { info: data.usuarios, personal: req.params.id });
 
+    if(req.session.usuario == undefined) {
+      return res.redirect('/')
+    }
+
+    if (req.session.usuario) {
+      return res.render('editarPerfil');
     }else{
       res.redirect('/users/login')
     }
   },
+
+  actualizarPerfil: function(req, res) {
+
+    if(req.session.usuario == undefined) {
+      return res.redirect('/')
+    }
+
+    let errors = {};
+
+    if (req.file == undefined) {
+      errors.message = "El campo foto esta vacio";
+      res.locals.errors = errors;
+      return res.render('editarPerfil');
+    }
+    else if (req.body.fecha == "") {
+        errors.message = "El campo fecha esta vacio";
+        res.locals.errors = errors;
+        return res.render('editarPerfil');
+    }
+    else if (req.body.dni == "") {
+        errors.message = "El campo dni esta vacio";
+        res.locals.errors = errors;
+        return res.render('editarPerfil');
+    }
+    else if (req.body.dni.length != 8) {
+        errors.message = "El campo dni debe tener 8 digitos";
+        res.locals.errors = errors;
+        return res.render('editarPerfil');
+    }
+    else{
+      db.Usuario.update({
+        foto_perfil: req.file.filename,
+        fecha: req.body.fecha,
+        dni: req.body.dni
+      },
+      {
+        where: {
+          id: req.session.usuario.id
+        }
+      })
+      .then(()=> res.redirect('/users/editarPerfil'))
+      .catch(error => console.log(error))
+    }
+  },
+  
   login: function (req, res) {
     res.render('login');
   },
 
   miPerfil: function (req, res) {
-    let usuario = data.usuarios.find(usuario => usuario.id == req.params.id)
-    let posteos = data.posteos.filter(posteo => posteo.id_usuario == usuario.id)
-    res.render('miPerfil', { usuario: usuario, posteos: posteos });
+    const id = req.params.id
+    db.Usuario.findByPk(id, {
+      include: [{
+        all:true,
+        nested: true
+      }]
+    })
+    .then((usuario)=> {
+      res.render('miPerfil', { usuario_encontrado: usuario });
+    })
   },
   registracion: function (req, res) {
     res.render('registracion');
@@ -52,15 +115,18 @@ const userController = {
 
     })
       .then(function (usuario) {
-        console.log(usuario);
         if (usuario == null || !bcrypt.compareSync(req.body.password, usuario.contrasenia)) {
           res.locals.error = 'usuario invalido'
           return res.render('login');
         }
         req.session.usuario = usuario.dataValues;
-        res.cookie('userId', usuario.id, {
-          maxAge: 1000 * 60 * 60
-        })
+
+        if(req.body.rememberme != undefined) {
+          res.cookie('userId', usuario.id, {
+            maxAge: 1000 * 60 * 60
+          })
+        }
+
         res.redirect('/')
       })
   },
@@ -151,6 +217,7 @@ const userController = {
      
     }
   },
+
   seguir: function(req, res) {
 
     if(req.session.usuario == undefined) {
@@ -183,6 +250,5 @@ const userController = {
     .catch(error => console.log(error))
   }
 }
-
 
 module.exports = userController;
