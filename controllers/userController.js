@@ -78,7 +78,14 @@ const userController = {
   },
   
   login: function (req, res) {
-    res.render('login');
+    
+    if (req.session.user !=undefined) {
+      return res.redirect('/index')
+
+    } else {
+      return res.render('login');
+    }
+
   },
 
   miPerfil: function (req, res) {
