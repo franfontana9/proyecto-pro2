@@ -46,11 +46,25 @@ module.exports = function (sequelize, dataTypes ) {
     /* 5.5 paso: crear las relaciones */
 
     Usuario.associate = function(models) {
-        Usuario.belongsToMany( models.Posteo, {
-            as : 'Posteos',
-            through:'comentarios',
-            foreignKey : 'id_usuarios',
-            otherKey:'id_posteos',
+
+        Usuario.hasMany(models.Posteo, {
+            foreignKey: 'id_usuarios'
+        })
+
+        Usuario.belongsToMany( models.Usuario, {
+            as : 'mis_seguidores',
+            through:'seguidores',
+            foreignKey : 'id_seguido',
+            otherKey:'id_seguidor',
+            timestamps:true,
+            onDelete: 'cascade'
+        })
+
+        Usuario.belongsToMany( models.Usuario, {
+            as : 'mis_seguidos',
+            through:'seguidores',
+            foreignKey : 'id_seguidor',
+            otherKey:'id_seguido',
             timestamps:true,
             onDelete: 'cascade'
         })
