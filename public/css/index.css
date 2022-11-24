@@ -50,6 +50,7 @@ header {
     padding: 10px;
     border-radius: 10px;
     width: 300px;
+    margin-left: 250px;
 }
 .search input {
     border: none;
@@ -68,6 +69,8 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin-right: 40px;
+    
 }
 .menu li {
     margin: 0 8px;
@@ -116,10 +119,10 @@ main {
 }
 .info-usuario img {
     margin-right: 10px;
-    border-radius: 100%;
+    border-radius: 190%;
     padding: 1px;
-    border: 1px solid rgb(0, 0, 0);
-    height: 45px;
+    border: 1px solid rgb(185, 18, 18);
+    height: 60px;
     width: 55.66px;
 }
 .post-reacciones {
@@ -290,10 +293,10 @@ main {
     background-color: rgb(0, 0, 0);
 }
 .profile {
-    border-radius: 90%;
+    border-radius: 100%;
     border: 2px solid rgb(0, 0, 0);
-    width: 70px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
 }
 
 .user-detail .meta {

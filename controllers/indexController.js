@@ -15,7 +15,6 @@ const indexController = {
       res.render('index', { posteos: posteos });
     })
   },
-    
 
   resultados: function (req, res) {
     let terminoBuscado = req.query.terminoBuscado;
@@ -34,11 +33,5 @@ const indexController = {
     })
   },
 }
-
-
-
-
-
-
 
 module.exports = indexController;

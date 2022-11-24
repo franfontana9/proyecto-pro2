@@ -30,9 +30,4 @@ router.get('/seguir/:id', userController.seguir);
 router.get('/dejarSeguir/:id', userController.dejarSeguir);
 
 
-
-
 module.exports = router;
-
-
-
