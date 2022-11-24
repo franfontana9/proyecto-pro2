@@ -1,69 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <%- include('./partials/head') %> 
+<%- include('./partials/head') %>
 
-<body>
-    <%- include("./partials/header") %> 
+    <body>
+        <%- include("./partials/header") %>
 
-    <main>
-        <div class="user-detail container">
-            <section class="top main-content">
-                <img class="profile" src="/img/usuario/<%= detalle.foto_perfil %>" alt="">
-                <div class="info-usuario">
-                        <p class="caption">
-                            <%= detalle.username%>
-                        </p>
-                        <% if(locals.usuario) { %>
-                            <% if(locals.usuario.id != detalle.id) { %>
-                            
-                                <% let siguiendo = false %>
-
-                                <% for(let t = 0; t < detalle.mis_seguidores.length; t++) { %>
-                                    <% if(detalle.mis_seguidores[t].id == locals.usuario.id ) { %>
-                                        <% siguiendo = true %>
+            <main>
+                <div class="user-detail container">
+                    <section class="top main-content">
+                        <img class="profile" src="/img/usuario/<%= detalle.foto_perfil %>" alt="">
+                        <div class="info-usuario">
+                            <p class="caption">
+                                <%= detalle.username %>
+                            </p>
+                            <% if(locals.usuario) { %>
+                                <% if(locals.usuario.id != detalle.id) { %>
+                                
+                                    <% let siguiendo = false %>
+    
+                                    <% for(let t = 0; t < detalle.mis_seguidores.length; t++) { %>
+                                        <% if(detalle.mis_seguidores[t].id == locals.usuario.id ) { %>
+                                            <% siguiendo = true %>
+                                        <% } %>
+                                    <% } %>
+    
+                                    <% if(siguiendo) { %>
+                                        <a class="follow" href="/users/dejarSeguir/<%= detalle.id %>">Dejar de seguir</a>
+                                    <% } else { %>
+                                        <a class="follow" href="/users/seguir/<%= detalle.id %>">Seguir</a>
                                     <% } %>
                                 <% } %>
-
-                                <% if(siguiendo) { %>
-                                    <a class="follow" href="/users/dejarSeguir/<%= detalle.id %>">Dejar de seguir</a>
-                                <% } else { %>
-                                    <a class="follow" href="/users/seguir/<%= detalle.id %>">Seguir</a>
-                                <% } %>
-
                             <% } %>
 
+                            <ul class="meta">
+                                <li>
+                                    <%= detalle.Posteos.length %> Publicaciones
+                                </li>
+                                <li>
+                                    <%= detalle.mis_seguidores.length %> Seguidores
+                                </li>
+                                <li>
+                                    <%= detalle.mis_seguidos.length %> Seguidos
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="bottom">
+                        <% for( let i=0; i < detalle.Posteos.length; i++ ) { %>
+                            <article class="post">
+                                <a href="/posteos/detallePosteo/<%= detalle.Posteos[i].id %>">
+                                    <img src="/img/post/<%= detalle.Posteos[i].imagen %>" alt=" ">
+                                    <p class="caption">
+                                        <%= detalle.Posteos[i].pie_imagen %>
+                                    </p>
+                                </a>
+                            </article>
                         <% } %>
-
-                    <ul class="meta">
-                        <li>
-                            <%=detalle.Posteos.length%> Publicaciones
-                        </li>
-                        <li>
-                            <%=detalle.mis_seguidores.length%> Seguidores
-                        </li>
-                        <li>
-                            <%=detalle.mis_seguidos.length%> Seguidos
-                        </li>
-                    </ul>
+                    </section>
                 </div>
-            </section>
-            <section class="bottom"> 
-              <% for( let i = 0; i < detalle.Posteos.length; i++ ) { %>
-                <article class="post">
-                    <a href="/posteos/detallePosteo/<%= detalle.Posteos[i].id %>">
-                        <img src="/img/post/<%= detalle.Posteos[i].imagen %>" alt=" ">
-                        <p class="caption">
-                            <%=detalle.Posteos[i].pieImagen%> 
-                        </p>  
-                    </a>
-                </article> 
-              <% } %>
-            </section>
-        </div>
-    </main>
+            </main>
 
-    <%- include('./partials/footer') %> 
-</body>
+            <%- include('./partials/footer') %>
+    </body>
 
 </html>
