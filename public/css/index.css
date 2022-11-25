@@ -91,7 +91,7 @@ main {
 }
 
 .main-content {
-    max-width: 470px;
+    width: 500px;
     margin: 0px;
 }
 
@@ -339,7 +339,6 @@ body {
      padding-left: 15px;
      margin: 0px;
      padding: 15px;
-     border: rgb(73, 34, 34) solid 3px;
      border-radius: 2px;
  }
 .imgindex{
@@ -360,3 +359,4 @@ body {
 .imgeditarperfil{
     border: #000 2px solid;
 }
+

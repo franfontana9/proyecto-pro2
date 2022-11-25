@@ -52,7 +52,7 @@ insert into usuarios values(DEFAULT, 'leomessi', 'messi@gmail.com', 'cincodecopa
 insert into usuarios values(DEFAULT, 'canserBero', 'berobero@gmail.com', 'canserbero', '/img/usuario/multer-1669339552844.jpeg' ,'1999-04-20', '51151166', DEFAULT, DEFAULT );
 insert into usuarios values(DEFAULT, '2pac', 'tupac@gmail.com', 'realg', '/img/usuario/multer-1668083668617.jpg' ,'2010-08-02', '12345678', DEFAULT, DEFAULT );
 
-INSERT INTO Posteos values (default, 4 , '/img/post/image-1669339936416.jpeg', 'par', default, default);
+INSERT INTO Posteos values (default, 4 , '/public/img/post/image-1669238245017.jpg', 'par', default, default);
 INSERT INTO posteos values (default, 5 , '/img/post/image-1669238526118.jpeg', 'real g', default, default);
 INSERT INTO posteos values (default, 1 , '/img/post/image-1669340564021.jpeg', 'sambasambinha', default, default);
 INSERT INTO posteos values (default, 2 , '/img/post/image-1669238590472.jpeg', 'buzzy gato', default, default);
