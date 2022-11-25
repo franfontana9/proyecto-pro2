@@ -68,5 +68,5 @@ INSERT INTO comentarios values (default, 2, 3, 'invitaa', default, default);
 INSERT INTO comentarios values (default, 5, 5, 'cuando salimos?', default, default);
 INSERT INTO comentarios values (default, 3, 4, 'jajajjaja', default, default);
 INSERT INTO comentarios values (default, 4, 2, 'gigooolo', default, default);
-INSERT INTO comentarios values (default, 6, 1, 'ooa', default, default);
+INSERT INTO comentarios values (default, 1, 1, 'ooa', default, default);
 
