@@ -19,7 +19,7 @@
                 <li><a href="/users/registracion">Registro</a></li>
                 <li><a href="/users/login">Login</a></li>
                 <% }else{ %> 
-                <li> Bienvenido <%= locals.usuario.username %> </li>
+                <li class="bienvenido"> Bienvenido <%= locals.usuario.username %> </li>
                 <li><a href="/"><i class="fa-solid fa-house"></i></a></li>
                 <li><a href="/posteos/agregarPosteo"><i class="fa-regular fa-square-plus"></i></a></li>
                 <li><a href="/users/miPerfil/<%= locals.usuario.id %>"><i class="fa-regular fa-user"></i></a></li>

@@ -20,6 +20,14 @@ module.exports = function (sequelize, dataTypes ) {
         },
         pie_imagen : {
             type : dataTypes.TEXT
+        },
+        createdAt: {
+            type: dataTypes.DATE,
+            allowNull: true,
+        },
+        updatedAt: {
+            type: dataTypes.DATE,
+            allowNull: true,
         }
     } 
 

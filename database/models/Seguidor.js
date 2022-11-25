@@ -18,6 +18,14 @@ module.exports = function (sequelize, dataTypes) {
       id_seguidor: {
         type: dataTypes.INTEGER
       },
+      createdAt: {
+          type: dataTypes.DATE,
+          allowNull: true,
+      },
+      updatedAt: {
+          type: dataTypes.DATE,
+          allowNull: true,
+      }
     }
   
     /* 4ta paso: crear un obj lit con la configuracion de la tabla */

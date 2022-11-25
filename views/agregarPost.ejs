@@ -10,14 +10,14 @@
         <section class="center main-content">
         <h1>Nuevo Post</h1>
         <form action="/posteos/crearPosteo" method="POST" enctype="multipart/form-data">
-            <div>
+            <div class="nuevoPost">
                 <label for="image">Imagen</label>
                 <input type="file" name="image"  placeholder="Imagen">
             </div>
-            <div>
+            <div class="nuevoPost">
                 <label for="post">Texto</label>
                 <input type="texto" name="post"  placeholder="Escribi un texto">
-            </div>
+            </div class="nuevoPost">
             <% if(locals.errors) { %>
                 <h2><%= locals.errors.message %></h2>
             <% } %>
